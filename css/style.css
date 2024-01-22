@@ -1,0 +1,11 @@
+h1 {
+    color: #111;
+    font-size: 40px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    font-family: 'Montserrat', sans-serif;
+}
