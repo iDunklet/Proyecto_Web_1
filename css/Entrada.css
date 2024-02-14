@@ -24,6 +24,12 @@
     margin: 0;
 }
 
+.espacio{
+    height: 300px;
+}
+.espacio1{
+    height: 200px;
+}
 
 /*re*/
 *{
@@ -42,9 +48,6 @@ header {
     top: 0;
     left: 0;
     background: white;
-}
-.espacio{
-    height: 200px;
 }
 /*header superior*/
 
@@ -187,11 +190,34 @@ nav ul li ul li a:hover{
 
 /*cuerpo*/
 
+/*resumenes*/
+main{
+    background: #68cd74;
+    padding: 20px 20px;
+    width: 600px;
+    margin-left: 30px;
+    border-radius: 20px;
+    height: 150px;
+}
+article{
+    margin-top: 25px;
+    font-size: medium;
+    text-align: left;
+    margin-left: 15px;
+}
+.button_resume{
+    margin-top: 20px;
+    border: solid #fff 0px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+}
+
 
 
 /*pie*/
 .pie {
-    position: fixed;
     bottom: 0;
     width: 100%;
     background-color:rgb(4, 2, 34);
