@@ -1,4 +1,6 @@
 
+/* membros*/
+
 .fila-miembros {
     display: flex;
     justify-content: space-around;
@@ -24,13 +26,6 @@
     margin: 0;
 }
 
-.espacio{
-    height: 300px;
-}
-.espacio1{
-    height: 200px;
-}
-
 /*re*/
 *{
     margin: 0;
@@ -49,6 +44,15 @@ header {
     left: 0;
     background: white;
 }
+
+
+.espacio{
+    height: 200px;
+}
+.espacio1{
+    height: 200px;
+}
+
 /*header superior*/
 
 .header__superior{
@@ -75,22 +79,26 @@ header {
     height: 70px;
     background: #1e8fc3;
     padding: 0px 20px;
+    z-index: 9999;
+    scale: 1.2;
 }
 
 .menu{
     max-width: 1200px;
     margin: auto;
     height: 100%;
+    z-index: 9999;
 }
 
 nav {
     height: 100%;
-
+    z-index: 9999;
 }
 
 nav > ul{
     height: 100%;
     display: flex;
+    z-index: 9999;
 }
 nav  ul  li {
     height: 100%;
@@ -109,7 +117,7 @@ nav > ul > li:first-child:hover > a {
     background-size: 24px;
     background-repeat: no-repeat;
     background-position: center center;
-
+    
 }
 
 nav > ul > li > a{
@@ -124,7 +132,7 @@ nav > ul > li > a{
     transition: all 300ms ease;
 }
 nav > ul > li > a:hover{
-    transform:scale(1.1);
+    transform:scale(1.09);
     background-color: #0074c7;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
@@ -132,13 +140,23 @@ nav > ul > li > a:hover{
     transform:scale(1.1);
     background-color: #0074c7;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    border-radius: 30px;
+    transition: all 300ms ease;
+}
+#selected:hover{
+    background-color: #0099E9;
+    border: 1px solid #7febc1;
+    box-shadow: 0px 0px 10px 0px rgba(245, 245, 245, 0.5);
+}
+
+.presupuesto{
+    margin-left: 20px;
 }
 
 /*submenu*/
 nav ul li ul{
     width: 200px;
     display: flex;
-    flex-direction: column;
     background: #fff;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     position: absolute;
@@ -149,6 +167,7 @@ nav ul li ul{
     opacity: 0;
     z-index: 10;
     transition: all 300ms ease;
+    flex-direction: column;
 }
 nav ul li:hover ul{
     visibility: visible;
@@ -166,6 +185,7 @@ nav ul li ul::before{
     position: absolute;
     top: -12px;
     left: 20px;
+
 }
 
 nav ul li ul li a{
@@ -177,6 +197,7 @@ nav ul li ul li a{
     font-size: 14px;
     text-transform: uppercase;
     transition: all 300ms ease;
+    flex-direction: column;
 }
 nav ul li ul li a:hover{
     background: #0074c7;
@@ -190,15 +211,34 @@ nav ul li ul li a:hover{
 
 /*cuerpo*/
 
+/*dividir fases*/
+.d_f{
+    margin-left: 100px;
+    margin-top: 50px;
+    width: 100%;
+}
+.d_f > h3{
+    align-content: center;
+}
+hr {
+    background-color: #7aca83;
+    height: 3px;
+
+}
+
+
 /*resumenes*/
 main{
     background: #68cd74;
     padding: 20px 20px;
-    width: 600px;
+    width: 800px;
     margin-left: 30px;
     border-radius: 20px;
     height: 150px;
-}   
+    
+    border: 2px solid #71ebbc;
+    
+}
 article{
     margin-top: 25px;
     font-size: medium;
@@ -207,11 +247,35 @@ article{
 }
 .button_resume{
     margin-top: 20px;
+    margin-bottom: 30px;
     border: solid #fff 0px;
     background: #fff;
     display: flex;
     flex-direction: column;
     width: 600px;
+    transition: all 300ms ease;
+    max-width: 650px;
+    max-height: 150px;
+    .mas_info{
+        visibility: hidden;
+        color: white;
+        transition: all 300ms ;
+        opacity: 0;
+    }
+    
+}
+.button_resume:hover{
+    cursor: pointer;
+    padding: 5px;
+    .mas_info{
+        visibility: visible;
+        transition: all 300ms ease;
+        opacity: 1;
+    }
+}
+.mas_info{
+    visibility: hidden;
+    transition: all 300ms ease;
 }
 
 
