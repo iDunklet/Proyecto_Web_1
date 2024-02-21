@@ -281,6 +281,11 @@ article{
 
 /*pie*/
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+.foto{
+    width: 700px;
+    height: 200px;
+    object-fit: fill;
+}
 
 .pie {
     bottom: 0;
@@ -302,17 +307,13 @@ article{
 }
 
 .pie .grupo-1 .box figure{
-    width: 100%;
-    height: 100%;
+
     display: flex;
     justify-content: center;
     align-items: center;
 
 }
 
-.pie .grupo-1 .box figure img{
-    width: 250px;
-}
 
 .pie .grupo-1 .box h2{
     color: #fff;
@@ -325,8 +326,7 @@ article{
     margin-bottom: 10px;
 }
 
-.pie .grupo-1 .red_socia a{
-    display: inline-block;
+.pie .grupo-1 .red-social a{
     text-decoration: none;
     width: 45px;
     height: 45px;
@@ -357,6 +357,10 @@ article{
         grid-gap: 30px;
         padding: 35px 0px;
     } 
+    .foto {
+        width: 100px;
+        height: 50px;
+    }
 }
     
 
