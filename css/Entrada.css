@@ -33,16 +33,18 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
     text-decoration: none;
-
 }
 
+body{
+    background-color: #fef2cd;
+}
 
 header {
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background: white;
+    background: #fef2cd;
 }
 
 
@@ -107,14 +109,14 @@ nav  ul  li {
 }
 
 nav > ul > li:first-child > a {
-    background-image: url(../otros/391821-200.png);
-    background-size: 24px;
+    background-image: url(../otros/OIP.png);
+    background-size: 40px;
     background-repeat: no-repeat;
     background-position: center center;
     padding: 36px 40px;
 }
 nav > ul > li:first-child:hover > a {
-    background-size: 24px;
+    background-size: 45px;
     background-repeat: no-repeat;
     background-position: center center;
     
@@ -147,8 +149,8 @@ nav > ul > li > a:hover{
 }
 #selected:hover{
     background-color: #8474eb;
-    border: 1px solid #ffff;
-    box-shadow: 0px 0px 10px 0px rgba(245, 245, 245, 0.5);
+    border: 1px solid #a496fb;
+    box-shadow: 0px 0px 10px 0px #6d737c;
 }
 
 .presupuesto{
@@ -159,7 +161,7 @@ nav > ul > li > a:hover{
 nav ul li ul{
     width: 200px;
     display: flex;
-    background: #fff;
+    background: #94B2DB;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     position: absolute;
     top: 90px;
@@ -183,7 +185,7 @@ nav ul li ul::before{
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 12px solid white;
+    border-bottom: 12px solid #94B2DB;
     position: absolute;
     top: -12px;
     left: 20px;
@@ -192,7 +194,7 @@ nav ul li ul::before{
 
 nav ul li ul li a{
     display: block;
-    color: #0099E9;
+    color: #ffffff;
     padding: 6px;
     padding-left: 14px;
     margin-top: 10px;
@@ -202,7 +204,7 @@ nav ul li ul li a{
     flex-direction: column;
 }
 nav ul li ul li a:hover{
-    background: #0074c7;
+    background: #85a0c5;
     color: #fff;
     transform: scale(1.1);
     padding-left: 30px;
@@ -223,21 +225,21 @@ nav ul li ul li a:hover{
     align-content: center;
 }
 hr {
-    background-color: #7aca83;
-    height: 3px;
+    background-color: #0D2C54;
+    height: 4px;
 
 }
 
 
 /*resumenes*/
 main{
-    background: #a6fbb0;
+    background: #D4C6B5;
     padding: 20px 20px;
     width: 800px;
     margin-left: 30px;
     border-radius: 60px;
     height: 150px;
-    border: 2px solid #71ebbc;
+    border: 2px solid #b0a8b2;
     
 }
 article{
@@ -245,6 +247,7 @@ article{
     font-size: medium;
     text-align: left;
     margin-left: 15px;
+    
 }
 .button_resume{
     margin-top: 20px;
@@ -257,6 +260,8 @@ article{
     transition: all 300ms ease;
     max-width: 650px;
     max-height: 150px;
+    background-color: #fef2cd;
+    color: white;
     .mas_info{
         visibility: hidden;
         color: white;
