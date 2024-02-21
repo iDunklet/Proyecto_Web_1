@@ -161,7 +161,7 @@ nav > ul > li > a:hover{
 nav ul li ul{
     width: 200px;
     display: flex;
-    background: #94B2DB;
+    background: #52489C;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     position: absolute;
     top: 90px;
@@ -185,7 +185,7 @@ nav ul li ul::before{
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 12px solid #94B2DB;
+    border-bottom: 12px solid #52489C;
     position: absolute;
     top: -12px;
     left: 20px;
@@ -204,7 +204,7 @@ nav ul li ul li a{
     flex-direction: column;
 }
 nav ul li ul li a:hover{
-    background: #85a0c5;
+    background: #655e99;
     color: #fff;
     transform: scale(1.1);
     padding-left: 30px;
