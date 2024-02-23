@@ -182,7 +182,38 @@ nav ul li ul li a:hover{
 
 
 /*cuerpo*/
-
+.titulo{
+    font-style: italic;
+    font-size: 25px;
+    margin-left: 225px;
+    padding: 10px;
+}
+.subtitulo{
+    font-size: 20px;
+    margin-left: 250px;
+    padding: 10px;
+}
+.texto{
+    font-size: 15px;
+    margin-left: 250px;
+    padding: 10px;
+    width: 50%;
+}
+.arbol{
+    float: right;
+    padding-right: 23%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.clase{
+    width: 60%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    object-fit: cover;
+    margin-top: 150px;
+}
 /*dividir fases*/
 .d_f{
     margin-left: 100px;
