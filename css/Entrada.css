@@ -1,11 +1,18 @@
 
 /* membros*/
 
+#container_membros{
+    color: #cadfdf
+    
+}
+
+
 .fila-miembros {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin: 20px;
+    width: 100%;
+    height: 200px;
 }
 
 .miembro {
@@ -25,7 +32,7 @@
 .miembro h3 {
     margin: 0;
 }
-
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
 /*re*/
 *{
     margin: 0;
@@ -36,7 +43,7 @@
 }
 
 body{
-    background-color: #fef2cd;
+    background-color: #ebfeff;
 }
 
 header {
@@ -44,7 +51,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: #fef2cd;
+    background: #E5FEFF
+    ;
 }
 
 
@@ -83,6 +91,7 @@ header {
     padding: 0px 20px;
     z-index: 9999;
     scale: 1.2;
+    border: #564aaf solid 4px;
 }
 
 .menu{
@@ -131,7 +140,7 @@ nav > ul > li > a{
     color: white;
     text-transform: uppercase;
     font-size: 14px;
-    transition: all 300ms ease;
+    transition: all 500ms ease;
    
 }
 nav > ul > li > a:hover{
@@ -161,7 +170,7 @@ nav > ul > li > a:hover{
 nav ul li ul{
     width: 200px;
     display: flex;
-    background: #94B2DB;
+    background: #52489C;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     position: absolute;
     top: 90px;
@@ -185,7 +194,7 @@ nav ul li ul::before{
     height: 0;
     border-left: 12px solid transparent;
     border-right: 12px solid transparent;
-    border-bottom: 12px solid #94B2DB;
+    border-bottom: 12px solid #52489C;
     position: absolute;
     top: -12px;
     left: 20px;
@@ -204,14 +213,14 @@ nav ul li ul li a{
     flex-direction: column;
 }
 nav ul li ul li a:hover{
-    background: #85a0c5;
+    background: #655e99;
     color: #fff;
     transform: scale(1.1);
     padding-left: 30px;
     font-size: 15px;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
 }
-
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
 
 /*cuerpo*/
 
@@ -233,11 +242,11 @@ hr {
 
 /*resumenes*/
 main{
-    background: #D4C6B5;
+    background: #A6BBDE;
     padding: 20px 20px;
     width: 800px;
     margin-left: 30px;
-    border-radius: 60px;
+    border-radius: 30px;
     height: 150px;
     border: 2px solid #b0a8b2;
     
@@ -260,7 +269,7 @@ article{
     transition: all 300ms ease;
     max-width: 650px;
     max-height: 150px;
-    background-color: #fef2cd;
+    background-color: #E5FEFF    ;
     color: white;
     .mas_info{
         visibility: hidden;
@@ -297,7 +306,7 @@ article{
 .pie {
     bottom: 0;
     width: 100%;
-    background-color: #0a141d;
+    background-color: #13203a;
     color: #fff;
     text-align: center;
     padding: 10px;
