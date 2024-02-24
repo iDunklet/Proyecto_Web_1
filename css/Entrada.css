@@ -250,7 +250,7 @@ hr {
     margin-left: 20px;
     transition:all 300ms ease;
     margin-top: 40px;
-    opacity: 1;
+    opacity: 0;
     .mas_info{
         visibility: hidden;
         color: white;
