@@ -40,7 +40,7 @@
 }
 
 body{
-    background-color: #ebfeff;
+    background-color: #ddfafc;
 }
 
 header {
@@ -48,8 +48,7 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    background: #E5FEFF
-    ;
+    z-index: 11;
 }
 
 
@@ -63,21 +62,21 @@ header {
 /*header superior*/
 
 .header__superior{
-    max-width:1200px;
     display: flex;
     margin: auto;
     align-items: center;
     justify-content: space-between;
     padding: 20px;
+    position: absolute;
+    z-index: 11;
 }
 
-.logo img{
-    width: 250px;
+#logo1{
+    width: 200px;
+    height: 50px;
+    margin-right: 50%;
 }
 
-.search input{
-    width: 300px;
-}
 
 /*barra menu*/
 
@@ -86,27 +85,25 @@ header {
     height: 70px;
     background: #52489c;
     padding: 0px 20px;
-    z-index: 9999;
-    scale: 1.2;
     border: #564aaf solid 4px;
 }
 
 .menu{
-    max-width: 1200px;
+    
     margin: auto;
     height: 100%;
-    z-index: 9999;
+    
 }
 
 nav {
     height: 100%;
-    z-index: 9999;
+    
 }
 
 nav > ul{
     height: 100%;
     display: flex;
-    z-index: 9999;
+
 }
 nav  ul  li {
     height: 100%;
@@ -114,19 +111,7 @@ nav  ul  li {
     position: relative;
 }
 
-nav > ul > li:first-child > a {
-    background-image: url(../otros/OIP.png);
-    background-size: 40px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    padding: 36px 40px;
-}
-nav > ul > li:first-child:hover > a {
-    background-size: 45px;
-    background-repeat: no-repeat;
-    background-position: center center;
-    
-}
+
 
 nav > ul > li > a{
     width: 100%;
@@ -220,37 +205,81 @@ nav ul li ul li a:hover{
 
 /*cuerpo*/
 
-/*dividir fases*/
-.d_f{
-    margin-left: 100px;
-    margin-top: 50px;
-    width: 100%;
+@keyframes show{
+    from{
+        opacity: 0;
+        scale: 25%;
+        position: relative;
+        
+    }
+    to{
+        opacity: 1;
+        scale: 100%;
+       
+    }
 }
-.d_f > h3{
-    align-content: center;
-}
-hr {
-    background-color: #0D2C54;
-    height: 4px;
+img  {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
 
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
 }
+
+
+
+
+
+/*dividir fases*/
+
+@keyframes divisiones{
+    from{
+       transform: translateX(0); 
+    }
+
+    to{
+        transform: translateX(500px);
+    }
+}  
+
+#division1 {
+    animation-name: divisiones;
+    animation-duration: 3s;
+}
+#division1{
+    border: #13203a solid;
+}
+#division2{
+    animation-name: divisiones;
+    animation-duration: 3s;
+}
+#division3{
+    animation-name: divisiones;
+    animation-duration: 3s;
+}
+
+
+
 
 /*resumenes*/
 
-
+/*3*/
 .button_resume3{
     background-color: #A6BBDE;
     color: white;
     background: #A6BBDE;
-    width: 35%;
+    width: 70%;
     height: 100px;
     padding: 20px;
     border-radius: 20px;
     border: 2px solid #b0a8b2;
     margin-left: 20px;
     transition:all 300ms ease;
-    margin-top: 40px;
-    opacity: 0;
+    margin-top: 250px;
+    opacity: 0.8;
     .mas_info{
         visibility: hidden;
         color: white;
@@ -264,27 +293,76 @@ hr {
     padding-left: 25px;
     margin-left: 28px;
     background-color: #95aed9;
-    margin-top: 45px;
+    margin-top: 260px;
     .mas_info{
         visibility: visible;
         transition: all 300ms ease;
         opacity: 1;
     }
 }
+#container_fase3{
+    display: inline-block;
+    width: 100%;
+    height: 500px;
+    justify-content: space-between;
+}
+@keyframes derecha{
+    from{
+        left: -50%;
+    }
+    to{
+        left: 35%;
+    }
+}
 
+
+
+
+#fase3{
+    width: 38%;
+    position: absolute;
+    z-index: 10;
+    left: 35%;
+    animation: derecha 5s forwards;
+    view-timeline-name: --fase3;
+    view-timeline-axis: block;
+
+    animation-timeline: --fase3;
+    animation-name: derecha;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+#imagen3{
+    width: 100%;
+    height: 500px;
+    
+    
+    border-radius: 20px;
+    border: 2px #b0a8b2 solid;
+}
+
+
+/*2*/
+.container_fase2{
+    
+    width: 100%;
+    height: 700px;
+    margin-bottom: 300px;
+}
 .button_resume2{
     background-color: #A6BBDE;
     color: white;
     background: #A6BBDE;
-    width: 35%;
+    width: 100%;
     height: 100px;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid #b0a8b2;
-    margin-left: 20px;
+    border: 4px solid #4b819b;
+    margin-left: 20px; 
     transition:all 300ms ease;
     margin-top: 40px;
-    opacity: 1;
+    opacity: 0.8;
 
     .mas_info{
         visibility: hidden;
@@ -306,27 +384,61 @@ hr {
         opacity: 1;
     }
 }
-.columna_D{
-    display: flex;
-    flex-direction: column;
-    align-items: end;
+.fase2{
+    margin-right: 20px;
+    width: 45%;
+    position: absolute;
+    z-index: 10;
+    right: 50%;
+    margin-top: 80px;
+}
+#imagen2{
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+    
+    border: 2px #4b819b solid;
+    
 }
 
 
-
+/*2*/
+.container_fase_1{
+    display: block;
+    width: 100%;
+    height: 700px;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.fase1{
+    width: 45%;
+    margin-right: 20px;
+    margin-top: 35px;
+    position: absolute;
+    z-index: 10;
+    left: 50%;
+}
+#imagen{
+    width: 100%;
+    height: 700px;
+    object-fit: cover;
+    
+    border: 2px #52489c solid;
+}
 .button_resume1{
     background-color: #A6BBDE;
     color: white;
     background: #A6BBDE;
-    width: 35%;
+    width: 95%;
     height: 100px;
     padding: 20px;
     border-radius: 20px;
-    border: 2px solid #b0a8b2;
-    margin-right: 20px;
+    border: 2px solid #52489c;
+    margin-left: 20px;
     transition:all 300ms ease;
     margin-top: 40px;
-    opacity: 1;
+    opacity: 0.8;
+    
     .mas_info{
         visibility: hidden;
         color: white;
@@ -338,7 +450,7 @@ hr {
 .button_resume1:hover{
     cursor: pointer;
     padding-right: 25px;
-    margin-right: 28px;
+    margin-left: 28px;
     background-color: #95aed9;
     margin-top: 45px;
     .mas_info{
@@ -347,22 +459,34 @@ hr {
         opacity: 1;
     }
 }
-
-#F_R_1{
-    width: 150px;
-    height: 200px;
-    object-fit: cover;
-    float: right;
+/*randoms de los resumenes*/
+.button_resume1 > a > span{
+    color: white;
 }
-
-
-
-
+.button_resume1 > a > h2{
+    color: white;
+}
 .mas_info{
     visibility: hidden;
     transition: all 300ms ease;
 }
+.button_resume2 > a > span{
+    color: white;
+}
+.button_resume2 > a > h2{
+    color: white;
+}
+.button_resume3 > a > span{
+    color: white;
+}
+.button_resume3 > a > h2{
+    color: white;
+}
 
+
+
+
+/*---*/
 
 
 /*pie*/
