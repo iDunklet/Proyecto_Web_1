@@ -202,8 +202,8 @@ nav ul li ul li a:hover{
 .arbol{
     float: right;
     padding-right: 23%;
-    width: 200px;
-    height: 200px;
+    width: 80px;
+    height: 80px;
     object-fit: cover;
 }
 .clase{
@@ -213,6 +213,7 @@ nav ul li ul li a:hover{
     align-items: center;
     object-fit: cover;
     margin-top: 150px;
+    margin-bottom: 150px;
 }
 /*dividir fases*/
 .d_f{
