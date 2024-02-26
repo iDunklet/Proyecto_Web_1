@@ -71,11 +71,25 @@ header {
     z-index: 11;
 }
 
+
+
+
+
 #logo1{
-    width: 200px;
+    width: 220px;
     height: 50px;
     margin-right: 50%;
+    position: absolute;
+    z-index: 11;
+    left: 85%;
+    top: 10px;
+    transition: all 300ms ease;
 }
+
+#logo1:hover{
+    border-bottom: 2px solid #52489c;
+}
+
 
 
 /*barra menu*/
@@ -83,35 +97,30 @@ header {
 .container__menu {
     width: 100%;
     height: 70px;
-    background: #52489c;
+    background: #b0a4fe;
     padding: 0px 20px;
-    border: #564aaf solid 4px;
+    border: #564aaf solid 1px;
 }
 
-.menu{
-    
+.menu{ 
     margin: auto;
-    height: 100%;
-    
+    height: 100%;  
 }
 
 nav {
-    height: 100%;
-    
+    height: 100%; 
 }
 
 nav > ul{
     height: 100%;
     display: flex;
-
 }
+
 nav  ul  li {
     height: 100%;
     list-style: none;
     position: relative;
 }
-
-
 
 nav > ul > li > a{
     width: 100%;
@@ -123,25 +132,13 @@ nav > ul > li > a{
     text-transform: uppercase;
     font-size: 14px;
     transition: all 500ms ease;
-   
 }
+
 nav > ul > li > a:hover{
     transform:scale(1.09);
     background-color: #7c71ca;
     box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     border-radius: 10px;
-}
-#selected{
-    transform:scale(1.1);
-    background-color: #564aaf;
-    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-    border-radius: 30px;
-    transition: all 300ms ease;
-}
-#selected:hover{
-    background-color: #8474eb;
-    border: 1px solid #a496fb;
-    box-shadow: 0px 0px 10px 0px #6d737c;
 }
 
 .presupuesto{
@@ -149,7 +146,7 @@ nav > ul > li > a:hover{
 }
 
 /*submenu*/
-nav ul li ul{
+nav ul .presupuesto ul{
     width: 200px;
     display: flex;
     background: #52489C;
@@ -164,23 +161,95 @@ nav ul li ul{
     transition: all 300ms ease;
     flex-direction: column;
 }
-nav ul li:hover ul{
+nav ul .presupuesto:hover ul{
     visibility: visible;
     opacity: 1;
     top: 70px;
 }
-
-nav ul li ul::before{
-    content: '';
-    width: 0;
-    height: 0;
-    border-left: 12px solid transparent;
-    border-right: 12px solid transparent;
-    border-bottom: 12px solid #52489C;
+nav ul .reto_D ul{
+    width: 200px;
+    display: flex;
+    background: #52489C;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
     position: absolute;
-    top: -12px;
-    left: 20px;
+    top: 90px;
+    left: -5px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 300ms ease;
+    flex-direction: column;
 }
+nav ul .reto_D:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 70px;
+}
+#FASE1 ul{
+    width: 200px;
+    display: flex;
+    background: #52489C;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 300ms ease;
+    flex-direction: column;
+}
+#FASE1:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 10px;
+    left: 104%;
+}
+#FASE2 ul{
+    width: 200px;
+    display: flex;
+    background: #52489C;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 300ms ease;
+    flex-direction: column;
+}
+#FASE2:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 10px;
+    left: 104%;
+}
+#FASE3 ul{
+    width: 200px;
+    display: flex;
+    background: #52489C;
+    box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+    position: absolute;
+    top: 200px;
+    left: 200px;
+    padding: 14px 0px;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+    transition: all 300ms ease;
+    flex-direction: column;
+}
+#FASE3:hover ul{
+    visibility: visible;
+    opacity: 1;
+    top: 10px;
+    left: 104%;
+}
+
 
 nav ul li ul li a{
     display: block;
@@ -207,18 +276,47 @@ nav ul li ul li a:hover{
 
 @keyframes show{
     from{
+        transform: translateX(-50%); 
         opacity: 0;
-        scale: 25%;
-        position: relative;
-        
-    }
-    to{
-        opacity: 1;
-        scale: 100%;
-       
-    }
+     }
+ 
+     to{
+         transform: translateX(0%);
+         opacity: 1;
+     }
 }
+
 img  {
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+.fase1{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+.fase2{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: show;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+#fase3{
     view-timeline-name: --image;
     view-timeline-axis: block;
 
@@ -231,36 +329,76 @@ img  {
 
 
 
-
-
 /*dividir fases*/
 
 @keyframes divisiones{
     from{
-       transform: translateX(0); 
+       transform: translateX(0);
+
     }
 
     to{
-        transform: translateX(500px);
+        transform: translateX(50%);
     }
 }  
 
-#division1 {
-    animation-name: divisiones;
-    animation-duration: 3s;
-}
 #division1{
-    border: #13203a solid;
+
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
+    animation-name: divisiones;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+    
 }
 #division2{
+    view-timeline-name: --image;
+    view-timeline-axis: block;
+
+    animation-timeline: --image;
     animation-name: divisiones;
-    animation-duration: 3s;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+
 }
 #division3{
-    animation-name: divisiones;
-    animation-duration: 3s;
-}
+    view-timeline-name: --image;
+    view-timeline-axis: block;
 
+    animation-timeline: --image;
+    animation-name: divisiones;
+
+    animation-range: entry 25% cover 30%;
+    animation-fill-mode: both;
+}
+#division1_1{
+    border: #0a1a2a solid 2px;
+    height: 30px;
+    background-color: #9e96de;
+}
+#division2_1{
+    border: #0a1a2a solid 2px; 
+    height: 30px;
+    background-color: #9e96de;
+}
+#division3_1{
+    border: #0a1a2a solid 2px;
+    height: 30px;
+    background-color: #9e96de;
+}
+#division1_1 span{
+    color: white;
+}
+#division2_1 span{
+    color: white;
+}
+#division3_1 span{
+    color: white;
+}
 
 
 
@@ -336,9 +474,6 @@ img  {
 #imagen3{
     width: 100%;
     height: 500px;
-    
-    
-    border-radius: 20px;
     border: 2px #b0a8b2 solid;
 }
 
@@ -348,7 +483,8 @@ img  {
     
     width: 100%;
     height: 700px;
-    margin-bottom: 300px;
+    margin-bottom: 200px;
+    
 }
 .button_resume2{
     background-color: #A6BBDE;
@@ -408,7 +544,7 @@ img  {
     width: 100%;
     height: 700px;
     justify-content: space-between;
-    margin-bottom: 30px;
+    
 }
 .fase1{
     width: 45%;
