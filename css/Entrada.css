@@ -360,8 +360,7 @@ nav ul li ul li a:hover{
     border: solid #94bbff 1px;
 }
 
-/* Estilo general del formulario */
-/* Estilo general del formulario */
+
 .form {
     max-width: 400px;
     margin: 0 auto;
@@ -371,70 +370,58 @@ nav ul li ul li a:hover{
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo del encabezado del formulario */
-/* Estilo general del formulario */
+
 .form {
-    max-width: 800px; /* Doble tamaño */
+    max-width: 800px; 
     margin: 0 auto;
-    padding: 40px; /* Doble tamaño */
+    padding: 40px; 
     background-color: #f4f4f4;
-    border-radius: 16px; /* Doble tamaño */
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); /* Doble tamaño */
+    border-radius: 16px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); 
 }
 
-/* Estilo del encabezado del formulario */
+
 .form_header {
-    text-align: center; /* Centrar el texto */
-    margin-bottom: 30px; /* Aumentar espacio */
+    text-align: center; 
+    margin-bottom: 30px; 
 }
 
 .title h1 {
     margin: 0;
-    font-size: 48px; /* Doble tamaño */
+    font-size: 48px; 
     color: #333;
     transition: font-size 0.3s;
 }
 
-.login_button button {
-    background-color: #3498db;
-    color: #fff;
-    padding: 16px 24px; /* Aumentar tamaño */
-    font-size: 18px; /* Aumentar tamaño */
-    border: none;
-    border-radius: 8px; /* Doble tamaño */
-    text-decoration: none;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
 
 .login_button button:hover {
     background-color: #2980b9;
 }
 
-/* Estilo de las cajas de entrada */
+
 .input_group {
     display: flex;
-    flex-direction: column; /* Cambiar a disposición en columna */
+    flex-direction: column; 
 }
 
 .input_box {
-    margin-bottom: 20px; /* Aumentar espacio */
+    margin-bottom: 20px; 
 }
 
 label {
     display: block;
     font-weight: bold;
-    margin-bottom: 10px; /* Aumentar espacio */
+    margin-bottom: 10px; 
     color: #333;
 }
 
 input,
 select {
     width: 100%;
-    padding: 12px; /* Aumentar tamaño */
-    margin-bottom: 20px; /* Aumentar espacio */
+    padding: 12px; 
+    margin-bottom: 20px; 
     border: 1px solid #ccc;
-    border-radius: 8px; /* Doble tamaño */
+    border-radius: 8px; 
     transition: transform 0.3s;
 }
 
@@ -443,17 +430,17 @@ select:hover {
     transform: scale(1.05);
 }
 
-/* Estilo del botón de continuar */
+
 .continue-button {
-    text-align: center; /* Centrar el botón */
-    margin-top: 30px; /* Aumentar espacio */
+    text-align: center; 
+    margin-top: 30px; 
 }
 
 .continue-button button {
     background-color: #2ecc71;
     color: #fff;
-    padding: 20px 40px; /* Aumentar tamaño */
-    font-size: 20px; /* Aumentar tamaño */
+    padding: 20px 40px; 
+    font-size: 20px; 
     border: none;
     border-radius: 8px;
     text-decoration: none;
