@@ -1,0 +1,839 @@
+/* membros*/
+
+.fila-miembros {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 200px;
+}
+
+.miembro {
+  text-align: center;
+  object-fit: cover;
+  width: 250px;
+  height: 100px;
+}
+
+.miembro img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.miembro h3 {
+  margin: 0;
+}
+
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*re*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  background-color: #ddfafc;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+.espacio {
+  height: 200px;
+}
+.espacio1 {
+  height: 200px;
+}
+
+/*barra menu*/
+.container {
+  position: absolute;
+  left: 80%;
+  z-index: 12;
+  top: 36%;
+}
+input {
+  outline: none;
+  box-sizing: border-box;
+  height: 20px;
+  width: 0;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  transition: all 700ms ease;
+}
+
+::placeholder {
+  color: grey;
+}
+
+.btn {
+  position: absolute;
+  right: 1px;
+  top: -9px;
+  width: 40px;
+  height: 40px;
+  background: #ffffff;
+  line-height: 20px;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+  transition: 500ms;
+}
+.btn i {
+  font-size: 20px;
+  color: #b0a4fe;
+  line-height: 30px;
+  transition: all 700ms ease;
+  padding-top: 4px;
+}
+.container:hover input {
+  width: 200px;
+}
+.container:hover i {
+  transform: rotate(-360deg);
+}
+.btn:hover {
+  background: #ffffff;
+}
+
+#logo1 {
+  width: 220px;
+  height: 50px;
+  position: absolute;
+  z-index: 11;
+  left: 5%;
+  top: 10px;
+  transition: all 300ms ease;
+}
+
+.container__menu {
+  width: 100%;
+  height: 70px;
+  background: #b0a4fe;
+  padding: 0px 20px;
+  border: #564aaf solid 1px;
+}
+
+.menu {
+  margin: auto;
+  height: 100%;
+}
+
+nav {
+  height: 100%;
+}
+
+nav > ul {
+  height: 100%;
+  display: flex;
+}
+
+nav ul li {
+  height: 100%;
+  list-style: none;
+  position: relative;
+}
+
+nav > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 26px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 500ms ease;
+}
+
+nav > ul > li > a:hover {
+  transform: scale(1.09);
+  background-color: #8d81e6;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.presupuesto {
+  position: absolute;
+  left: 50%;
+}
+
+/*submenu*/
+.reto_D {
+  position: absolute;
+  left: 70%;
+}
+
+nav ul .presupuesto ul {
+  width: 200px;
+  display: flex;
+  background: #b0a4fe;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 90px;
+  left: -5px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: all 300ms ease;
+  flex-direction: column;
+}
+nav ul .presupuesto:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+}
+nav ul .reto_D ul {
+  width: 200px;
+  display: flex;
+  background: #b0a4fe;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 90px;
+  left: -5px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: all 300ms ease;
+  flex-direction: column;
+}
+nav ul .reto_D:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 70px;
+}
+#FASE1 ul {
+  width: 200px;
+  display: flex;
+  background: #b0a4fe;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: all 300ms ease;
+  flex-direction: column;
+}
+#FASE1:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 10px;
+  left: 104%;
+}
+#FASE2 ul {
+  width: 200px;
+  display: flex;
+  background: #b0a4fe;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: all 300ms ease;
+  flex-direction: column;
+}
+#FASE2:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 10px;
+  left: 104%;
+}
+#FASE3 ul {
+  width: 200px;
+  display: flex;
+  background: #b0a4fe;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 200px;
+  left: 200px;
+  padding: 14px 0px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 10;
+  transition: all 300ms ease;
+  flex-direction: column;
+}
+#FASE3:hover ul {
+  visibility: visible;
+  opacity: 1;
+  top: 10px;
+  left: 104%;
+}
+
+nav ul li ul li a {
+  display: block;
+  color: #ffffff;
+  padding: 6px;
+  padding-left: 14px;
+  margin-top: 10px;
+  font-size: 14px;
+  text-transform: uppercase;
+  transition: all 300ms ease;
+  flex-direction: column;
+}
+nav ul li ul li a:hover {
+  background: #8d81e6;
+  color: #fff;
+  transform: scale(1.1);
+  padding-left: 30px;
+  font-size: 15px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+}
+/*-----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+#bienvenido {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: large;
+}
+/*cuerpo*/
+
+/* */
+
+/*  */
+#container_formulario {
+  width: 100%;
+  height: 1100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #0c0ce94d;
+}
+#random {
+  height: 100%;
+  width: 50%;
+}
+.container_habilidades {
+  width: 90%;
+  height: 16%;
+  background: #c9ddff;
+  margin: 50px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border: solid #94bbff 1px;
+}
+
+.form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.form {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px;
+  background-color: #f4f4f4;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.form_header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.title h1 {
+  margin: 0;
+  font-size: 48px;
+  color: #333;
+  transition: font-size 0.3s;
+}
+
+.login_button button:hover {
+  background-color: #2980b9;
+}
+
+.input_group {
+  display: flex;
+  flex-direction: column;
+}
+
+.input_box {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+input,
+select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+
+input:hover,
+select:hover {
+  transform: scale(1.05);
+}
+
+.continue-button {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.continue-button button {
+  background-color: #2ecc71;
+  color: #fff;
+  padding: 20px 40px;
+  font-size: 20px;
+  border: none;
+  border-radius: 8px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.continue-button button:hover {
+  background-color: #27ae60;
+}
+
+@keyframes show {
+  from {
+    transform: translateX(-50%);
+    opacity: 0;
+  }
+
+  to {
+    transform: translateX(0%);
+    opacity: 1;
+  }
+}
+
+img {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+.fase1 {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+.fase2 {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+#fase3 {
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: show;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+
+/*dividir fases*/
+
+@keyframes divisiones {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(50%);
+  }
+}
+
+#division1 {
+  font-size: large;
+  padding-top: 15px;
+  width: 30%;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: divisiones;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+#division2 {
+  font-size: large;
+  padding-top: 15px;
+  width: 30%;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: divisiones;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+#division3 {
+  font-size: large;
+  padding-top: 15px;
+  width: 30%;
+  view-timeline-name: --image;
+  view-timeline-axis: block;
+
+  animation-timeline: --image;
+  animation-name: divisiones;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+#division1_1 {
+  border: #0a1a2a solid 2px;
+  height: 50px;
+  background-color: #9e96de;
+}
+#division2_1 {
+  border: #0a1a2a solid 2px;
+  height: 50px;
+  background-color: #9e96de;
+}
+#division3_1 {
+  border: #0a1a2a solid 2px;
+  height: 50px;
+  background-color: #9e96de;
+}
+#division1_1 span {
+  color: white;
+}
+#division2_1 span {
+  color: white;
+}
+#division3_1 span {
+  color: white;
+}
+
+/*resumenes*/
+
+/*3*/
+.button_resume3 {
+  background-color: #a6bbde;
+  color: white;
+  background: #a6bbde;
+  width: 90%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #b0a4fe;
+  margin-left: 20px;
+  transition: all 300ms ease;
+  margin-top: 100px;
+  opacity: 0.8;
+  .mas_info {
+    visibility: hidden;
+    color: white;
+    transition: all 300ms ease;
+    opacity: 0;
+  }
+}
+.button_resume3:hover {
+  cursor: pointer;
+  padding-left: 25px;
+  margin-left: 28px;
+  background-color: #95aed9;
+  .mas_info {
+    visibility: visible;
+    transition: all 300ms ease;
+    opacity: 1;
+  }
+}
+#container_fase3 {
+  display: inline-block;
+  width: 100%;
+  height: 500px;
+  justify-content: space-between;
+}
+@keyframes derecha {
+  from {
+    left: -50%;
+  }
+  to {
+    left: 35%;
+  }
+}
+
+#fase3 {
+  width: 38%;
+  position: absolute;
+  z-index: 10;
+  left: 35%;
+  animation: derecha 5s forwards;
+  view-timeline-name: --fase3;
+  view-timeline-axis: block;
+
+  animation-timeline: --fase3;
+  animation-name: derecha;
+
+  animation-range: entry 25% cover 30%;
+  animation-fill-mode: both;
+}
+#imagen3 {
+  width: 100%;
+  height: 1000px;
+  border: 2px #b0a4fe solid;
+}
+
+/*2*/
+#container_fase2 {
+  width: 100%;
+  height: 1000px;
+}
+.button_resume2 {
+  background-color: #a6bbde;
+  color: white;
+  background: #a6bbde;
+  width: 100%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #b0a4fe;
+  margin-left: 20px;
+  transition: all 300ms ease;
+  margin-top: 40px;
+  opacity: 0.8;
+
+  .mas_info {
+    visibility: hidden;
+    color: white;
+    transition: all 300ms ease;
+    opacity: 0;
+  }
+}
+.button_resume2:hover {
+  cursor: pointer;
+  padding-left: 25px;
+  margin-left: 28px;
+  background-color: #95aed9;
+  margin-top: 45px;
+  .mas_info {
+    visibility: visible;
+    transition: all 300ms ease;
+    opacity: 1;
+  }
+}
+.fase2 {
+  margin-right: 20px;
+  width: 45%;
+  position: absolute;
+  z-index: 10;
+  right: 50%;
+  margin-top: 80px;
+}
+#imagen2 {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+  border: 2px #b0a4fe solid;
+}
+
+/*2*/
+#container_fase1 {
+  display: block;
+  width: 100%;
+  height: 1000px;
+  justify-content: space-between;
+}
+.fase1 {
+  width: 45%;
+  margin-right: 20px;
+  margin-top: 35px;
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+}
+#imagen {
+  width: 100%;
+  height: 1000px;
+  object-fit: cover;
+
+  border: 2px #52489c solid;
+}
+.button_resume1 {
+  background-color: #a6bbde;
+  color: white;
+  background: #a6bbde;
+  width: 95%;
+  height: 100px;
+  padding: 20px;
+  border-radius: 20px;
+  border: 2px solid #b0a4fe;
+  margin-left: 20px;
+  transition: all 300ms ease;
+  margin-top: 40px;
+  opacity: 0.8;
+
+  .mas_info {
+    visibility: hidden;
+    color: white;
+    transition: all 300ms ease;
+    opacity: 0;
+  }
+}
+.button_resume1:hover {
+  cursor: pointer;
+  padding-right: 25px;
+  margin-left: 28px;
+  background-color: #95aed9;
+  margin-top: 45px;
+  .mas_info {
+    visibility: visible;
+    transition: all 300ms ease;
+    opacity: 1;
+  }
+}
+/*randoms de los resumenes*/
+.button_resume1 > a > span {
+  color: white;
+}
+.button_resume1 > a > h2 {
+  color: white;
+}
+.mas_info {
+  visibility: hidden;
+  transition: all 300ms ease;
+}
+.button_resume2 > a > span {
+  color: white;
+}
+.button_resume2 > a > h2 {
+  color: white;
+}
+.button_resume3 > a > span {
+  color: white;
+}
+.button_resume3 > a > h2 {
+  color: white;
+}
+
+/*---*/
+
+/*pie*/
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+.foto {
+  width: 700px;
+  height: 200px;
+  object-fit: fill;
+}
+
+.pie {
+  bottom: 0;
+  width: 100%;
+  background-color: #13203a;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+}
+
+.pie .grupo-1 {
+  width: 100%;
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  padding: 45px 0px;
+}
+
+.pie .grupo-1 .box figure {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pie .grupo-1 .box h2 {
+  color: #fff;
+  margin-bottom: 25px;
+  font-size: 20px;
+}
+
+.pie .grupo-1 .box p {
+  color: #efefef;
+  margin-bottom: 10px;
+}
+
+.pie .grupo-1 .red-social a {
+  text-decoration: none;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  color: #fff;
+  margin-right: 10px;
+  background-color: #0d2033;
+  text-align: center;
+  transition: all 300ms ease;
+}
+.pie .grupo-1 .red_socia a:hover {
+  color: aqua;
+}
+.pie .grupo-2 {
+  background-color: #0a1a2a;
+  padding: 15px 10px;
+  text-align: center;
+  color: #fff;
+}
+.pie .grupo-2 small {
+  font-size: 15px;
+}
+
+@media screen and (max-width: 800px) {
+  .pie .grupo-1 {
+    width: 90%;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    padding: 35px 0px;
+  }
+  .foto {
+    width: 100px;
+    height: 50px;
+  }
+}
+/*----------------------------------------------------------------------------------------------------------*/
