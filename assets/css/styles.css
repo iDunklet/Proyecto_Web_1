@@ -1,4 +1,74 @@
-/* membros*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter";
+  text-decoration: none;
+}
+
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 11;
+}
+
+
+body {
+  background-color: #ddfafc;
+}
+
+input {
+  outline: none;
+  box-sizing: border-box;
+  height: 20px;
+  width: 0;
+  padding: 0 20px;
+  color: #000;
+  border-radius: 50px;
+  font-size: 15px;
+  border: 1px solid #ffffff;
+  transition: all 700ms ease;
+}
+
+nav {
+  height: 100%;
+}
+
+nav > ul {
+  height: 100%;
+  display: flex;
+}
+
+nav ul li {
+  height: 100%;
+  list-style: none;
+  position: relative;
+}
+
+nav > ul > li > a {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  padding: 26px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 14px;
+  transition: all 500ms ease;
+}
+
+nav > ul > li > a:hover {
+  transform: scale(1.09);
+  background-color: #8d81e6;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
 
 .fila-miembros {
   display: flex;
@@ -25,29 +95,6 @@
 .miembro h3 {
   margin: 0;
 }
-
-/*------------------------------------------------------------------------------------------------------------------------------------------------*/
-/*re*/
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, Helvetica, sans-serif;
-  text-decoration: none;
-}
-
-body {
-  background-color: #ddfafc;
-}
-
-header {
-  width: 100%;
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 11;
-}
-
 .espacio {
   height: 200px;
 }
@@ -61,18 +108,6 @@ header {
   left: 80%;
   z-index: 12;
   top: 36%;
-}
-input {
-  outline: none;
-  box-sizing: border-box;
-  height: 20px;
-  width: 0;
-  padding: 0 20px;
-  color: #000;
-  border-radius: 50px;
-  font-size: 15px;
-  border: 1px solid #ffffff;
-  transition: all 700ms ease;
 }
 
 ::placeholder {
@@ -130,40 +165,6 @@ input {
 .menu {
   margin: auto;
   height: 100%;
-}
-
-nav {
-  height: 100%;
-}
-
-nav > ul {
-  height: 100%;
-  display: flex;
-}
-
-nav ul li {
-  height: 100%;
-  list-style: none;
-  position: relative;
-}
-
-nav > ul > li > a {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  padding: 26px;
-  color: white;
-  text-transform: uppercase;
-  font-size: 14px;
-  transition: all 500ms ease;
-}
-
-nav > ul > li > a:hover {
-  transform: scale(1.09);
-  background-color: #8d81e6;
-  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
 }
 
 .presupuesto {
@@ -757,7 +758,7 @@ img {
 
 /*pie*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
 .foto {
   width: 700px;
   height: 200px;
