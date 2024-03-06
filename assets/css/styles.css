@@ -170,7 +170,7 @@ nav > ul > li > a:hover {
 
 .presupuesto {
   position: absolute;
-  left: 50%;
+  left: 55%;
 }
 
 /*submenu*/
@@ -306,59 +306,82 @@ nav ul li ul li a:hover {
 
 #bienvenido {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: large;
+  margin-bottom: -4px;
+}
+#bienvenido img {
+  width: 100%;
+  height: 1000px;
+  margin-top: 70px;
+  object-fit: cover;
+}
+#bienvenido h1 {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  z-index: 10;
+  color: white;
+  font-size: 90px;
+  opacity: 0.9;
+}
+#bienvenido h2 {
+  position: absolute;
+  top: 35%;
+  left: 10%;
+  z-index: 10;
+  color: white;
+  font-size: 70px;
+  opacity: 0.9;
 }
 /*cuerpo*/
 
-/* */
 
 /*  */
 #container_formulario {
   width: 100%;
-  height: 1100px;
-  display: flex;
+  height: 2000px;
   justify-content: center;
   align-items: center;
   background: #0c0ce94d;
 }
 #random {
-  height: 100%;
-  width: 50%;
+  height: 500px;
+  width: 100%;
 }
 .container_habilidades {
-  width: 90%;
-  height: 16%;
+  width: 45%;
+  height: 23%;
   background: #c9ddff;
-  margin: 50px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  margin: 1% 2%;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   border: solid #94bbff 1px;
 }
-
+/*--------------------------------formulario-------------------------------*/
 .form {
-  max-width: 400px;
+  width: 80%;
   margin: 0 auto;
   padding: 20px;
   background-color: #f4f4f4;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: 100px; /* Altura inicial (ajusta según sea necesario) */
+  overflow: hidden; /* Para ocultar inicialmente el contenido */
+  transition: height 900ms, transform 900ms ease-in-out; /* Agregado: Efecto de transición suave */
 }
 
-.form {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 40px;
-  background-color: #f4f4f4;
-  border-radius: 16px;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+.form:hover {
+  height: auto; /* Mostrar todo el contenido cuando el formulario está en hover */
+  transform: translateY(-10px); /* Agregado: Efecto de desplazamiento hacia arriba */
+  
 }
 
 .form_header {
-  text-align: center;
+  text-align: left;
   margin-bottom: 30px;
+  color: #000;
 }
 
 .title h1 {
@@ -368,10 +391,6 @@ nav ul li ul li a:hover {
   transition: font-size 0.3s;
 }
 
-.login_button button:hover {
-  background-color: #2980b9;
-}
-
 .input_group {
   display: flex;
   flex-direction: column;
@@ -379,6 +398,9 @@ nav ul li ul li a:hover {
 
 .input_box {
   margin-bottom: 20px;
+  border: 2px solid rgb(221, 221, 221);
+  padding: 5px;
+  border-radius: 10px;
 }
 
 label {
@@ -393,14 +415,14 @@ select {
   width: 100%;
   padding: 12px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid #797979;
   border-radius: 8px;
   transition: transform 0.3s;
 }
 
 input:hover,
 select:hover {
-  transform: scale(1.05);
+  transform: scale(1.005);
 }
 
 .continue-button {
@@ -409,7 +431,7 @@ select:hover {
 }
 
 .continue-button button {
-  background-color: #2ecc71;
+  background-color: #00fbff;
   color: #fff;
   padding: 20px 40px;
   font-size: 20px;
@@ -421,9 +443,15 @@ select:hover {
 }
 
 .continue-button button:hover {
-  background-color: #27ae60;
+  background-color: #cecece;
 }
 
+.continue-button button a {
+  color: white;
+}
+
+
+/*---------------------------------------------------------------------------*/
 @keyframes show {
   from {
     transform: translateX(-50%);
