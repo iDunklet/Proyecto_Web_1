@@ -338,10 +338,11 @@ nav ul li ul li a:hover {
 /*  */
 #container_formulario {
   width: 100%;
-  height: 2000px;
+  height: auto;
   justify-content: center;
   align-items: center;
   background: #0c0ce94d;
+  padding-bottom: 20px;
 }
 #random {
   height: 500px;
@@ -369,13 +370,13 @@ nav ul li ul li a:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   height: 100px; /* Altura inicial (ajusta según sea necesario) */
   overflow: hidden; /* Para ocultar inicialmente el contenido */
+  cursor: pointer;
   transition: height 900ms, transform 900ms ease-in-out; /* Agregado: Efecto de transición suave */
 }
 
 .form:hover {
   height: auto; /* Mostrar todo el contenido cuando el formulario está en hover */
   transform: translateY(-10px); /* Agregado: Efecto de desplazamiento hacia arriba */
-  
 }
 
 .form_header {
@@ -394,6 +395,7 @@ nav ul li ul li a:hover {
 .input_group {
   display: flex;
   flex-direction: column;
+  cursor: default;
 }
 
 .input_box {
@@ -789,9 +791,10 @@ img {
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
 
 .foto {
-  width: 700px;
+  width: 60%;
   height: 200px;
   object-fit: fill;
+  display: inline-block;
 }
 
 .pie {
@@ -800,23 +803,20 @@ img {
   background-color: #13203a;
   color: #fff;
   text-align: center;
-  padding: 10px;
 }
 
 .pie .grupo-1 {
   width: 100%;
-  max-width: 1200px;
   margin: auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 50px;
+  display: inline-block;
   padding: 45px 0px;
 }
 
-.pie .grupo-1 .box figure {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.box{
+  width: 35%;
+  display: inline-block;
+  padding: 10px;
+  text-align: left;
 }
 
 .pie .grupo-1 .box h2 {
@@ -825,7 +825,7 @@ img {
   font-size: 20px;
 }
 
-.pie .grupo-1 .box p {
+.pie .grupo-1 .box h3 {
   color: #efefef;
   margin-bottom: 10px;
 }
