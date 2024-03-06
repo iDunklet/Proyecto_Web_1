@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/menu.css">
+    <link rel="stylesheet" href="../assets/css/retos.css">
+</head>
+<body>
+    <header>
+        <a href="/index.html"><img id="logo1" src="/assets/img/labdoo.png" alt="Labdoo"></a>
+        <div class="container__menu">
+            <div class="menu">
+                <nav>
+                    <ul>
+                        <div class="container">
+                            <input type="text" placeholder="Buscar...">
+                            <div class="btn">
+                                <i class="fa fa-search"></i>
+                            </div>
+                        </div>
+                        <li class="presupuesto"><a href="">Presupuestos</a>
+                            <ul>
+                                <li><a href="/presupuestos/aula21.html">Aula 2.1</a></li>
+                                <li><a href="/presupuestos/aula22.html">Aula 2.2</a></li>
+                                <li><a href="/presupuestos/aula23.html">Aula 2.3</a></li>
+                                <li><a href="/presupuestos/aula24.html">Aula 2.4</a></li>
+                                <li><a href="/presupuestos/aula25.html">Aula 2.5</a></li>
+                                <li><a href="/presupuestos/total.html">TOTAL</a></li>
+                            </ul>
+                        </li>
+                        <li class="reto_D"><a href="#">RETOS</a>
+                            <ul>
+                                <li id="FASE1"><a href="">FASE1</a>
+                                    <ul id="FASE1">
+                                        <li><a href="/retos/reto1.html"
+                                                >RETO 1</a></li>
+                                        <li><a href="/retos/reto2.html" >RETO 2</a>
+                                        </li>
+                                        <li><a href="/retos/reto3.html"
+                                                >RETO 3</a></li>
+                                        <li><a href="/retos/reto4.html">RETO
+                                                4</a></li>
+                                    </ul>
+                                </li>
+                                <li id="FASE2"><a href="">FASE2</a>
+                                    <ul>
+                                        <li><a href="/retos/reto6.html"
+                                                >RETO 6</a></li>
+                                        <li><a href="retos/reto7.html">RETO 7</a></li>
+                                        <li><a href="retos/reto8.html">RETO 8</a></li>
+                                        <li><a href="retos/reto9.html">RETO 9</a></li>
+                                        <li><a href="retos/reto10.html">RETO 10</a></li>
+                                    </ul>
+                                </li>
+                        </li>
+                        <li id="FASE3"><a href="">FASE3</a>
+                            <ul>
+                                <li><a href="retos/reto5.html">RETO 5</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+ <div class="article_1">
+    <h1>Mantenimento de nuestro servidor</h1>
+    <h2>Reto 6 - Fase 2</h2>
+        <h3>Justificación Sistemas Operativos</h3>
+            <h4>Comparativa</h4>
+                <p>Nos ofrecen la posibilidad de elegir los servidores que deseamos para nuestro proyecto, y después de investigar otras opciones, hemos decidido trabajar con Windows Server 2019 y Ubuntu Server 22.04 LTS. Debemos seleccionar uno como nuestro servidor principal y otro como servidor de respaldo.
+                    Windows Server 2019 es una elección versátil con una interfaz gráfica intuitiva, pero su desventaja es el costo elevado debido a licencias y su naturaleza de red privada.
+                    Ubuntu Server 22.04 LTS destaca por su alta seguridad, código abierto (sin necesidad de licencia), rendimiento superior al servidor Windows, y avanzadas opciones de personalización.</p>
+            <h4>Servidores y sus requisitos mínimos</h4>
+                <h5>Windows Server 2019</h5>
+                    <p>Para esta fase del proyecto hemos decidido que Windows Server se quedará como servidor de backup, no tiene tanto rendimiento como Ubuntu Server, y encima al iniciar el dual-boot no carga el servidor primero por defecto.
+                    </p>
+                <h5>Ubuntu Server 22.04 LTS</h5>
+                    <p>Ubuntu server se quedará como nuestro servidor principal, como ya hemos dicho anteriormente, tiene mucho más rendimiento, personalización y además el dual-boot lo carga por defecto, haciendo que la accesibilidad al servidor sea mucho más fluida.
+                    </p>
+        <h3>Montaje del servidor</h3>
+            <h4>Nuestro Servidor</h4>
+                    <p>Nuestra torre del servidor consta de los componentes básicos para su correcto funcionamiento, pero vamos a usar una gráfica integrada de nuestro procesador. También hemos sacado el lector de CDs y disquetes porque no vamos a usarlos ni en la instalación ni post instalación, además de que interfería con el montaje y limpieza de la torre. Solo usamos una torre porque vamos a instalar ambos servidores con un dual-boot, es decir, que no vamos a necesitar 2 torres para almacenar ambos Sistemas Operativos.
+                    </p>
+                <h5>Componentes</h5>
+                    <p>Procesador: I5-7400</p>
+                    <p>Placa Base: Gigabyte GA-H110M-S2H</p>
+                    <p>RAM: 8gb ddr4</p>
+                    <p>Crucial SSD 275 gb</p>
+                    <p>WESTERN DIGITAL 1.0 TB</p>
+            <h4>Configuración del servidor</h4>
+                <h5>Justificación de implementación del dual-boot</h5>
+                    <p>El dual-boot consiste básicamente en tener dos sistemas operativos en el ordenador, en nuestro caso de un lado tendremos Windows Server 2019 y por el otro Ubuntu Server 22.04. Las versiones escogidas para los sistemas operativos fueron escogidas basándonos en la experiencia de los participantes del grupo con las mismas.
+                        Hemos optado por implementar un dual-boot porque con él podemos tener más compatibilidad de software, seguridad, estabilidad, etc.</p>
+                <h5>Actualización de nuestros servidores</h5>
+                    <h6>Windows</h6>
+                        <p>Para actualizar nuestro servidor Windows, tenemos que acceder a la pestaña de “buscar actualizaciones” en nuestro panel de control.
+
+                            Esta por defecto nos busca actualizaciones pendientes que no hemos instalado en nuestro server, pero también puedes hacer una búsqueda a fondo de actualizaciones. Una vez encontradas las actualizaciones tendremos que descargarlas e instalarlas, hay dos botones para eso debajo de cada uno de los apartados de updates.
+                            </p>
+                    <h6>Ubuntu</h6>
+                    <p>En Ubuntu tenemos que ejecutar dos comandos, uno para descargar las actualizaciones y otro para instalarlas. En el server tenemos que poner “sudo apt update” para obtener todas las actualizaciones pendientes, y una vez hecho eso tenemos que poner “sudo apt upgrade” para instalarlas, este último comando tarda bastante más que el primero.</p>
+    </div>
+    
+<div id="pc">
+    <img src="../assets/img/pc.png" alt="">
+</div>
+<div id="placa">
+    <img src="../assets/img/placa.png" alt="">
+</div>
+<div class="boton_reto">
+    <a href="../assets/documents/reto2.pdf">MAS INFORMACION DEL RETO 2</a>
+</div>
+<footer class="pie">
+    <div class="grupo-1">
+            <img class="foto" src="/assets/img/labdoo.png" alt="logo labdoo">
+        <div class="box">
+            <h1>Nuestros E-mails</h2>
+            <h4>E-mail de Gerard: gzina@politecnics.barcelona</h3>
+            <h4>E-mail de Nil: ndiazb2223@politecnics.barcelona</h3>
+            <h4>E-mail de Lluis: lestevess2122@politecnics.barcelona</h3>
+            <h4>E-mail de Hugo: hpalacinc2223@politecnics.barcelona</h3>
+            <h4>E-mail de Joel: jparram@politecnics.barcelona</h3>
+        </div>
+        <div class="red-social">
+            <a href="https://www.facebook.com" class="fa fa-facebook"></a>
+            <a href="https://www.instagram.com" class="fa fa-instagram"></a>
+            <a href="https://www.twitter.com" class="fa fa-twitter"></a>
+            <a href="https://www.youtube.com" class="fa fa-youtube"></a>
+        </div>
+    </div>
+    <div class="grupo-2">
+        <small>&copy; 2024 <b>Labdoo</b> - Todos los Derechos Reservados.</small>
+    </div>
+</footer>
+</body>
+</html>

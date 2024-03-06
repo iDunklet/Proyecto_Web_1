@@ -1,0 +1,72 @@
+.article_1{
+    margin-top: 90px;
+    display: inline-block;
+    width: 50%;
+    padding-left: 10px;
+}
+#imagen{
+    position: absolute;
+    right: 20%;
+    top: 10%;
+}
+#normativa{
+    padding: 10px;
+    background-color:  #8d81e6;
+    border: 2px solid #524b87;
+    font-weight: 600;
+    color: white;
+    margin-left: 10px;
+    transition: all ease 300ms;
+}
+#normativa:hover{
+    padding: 12px;
+    border-radius: 15px;
+}
+.article_1 h3{
+    margin: 10px;
+}
+.article_1 h5{
+    margin: 10px 4px;
+}
+.article_1 h4{
+    margin: 10px 6px;
+}
+.article_1 h6{
+    margin: 10px 2px;
+}
+.boton_reto{
+    margin: 80px 20%;
+    padding: 20px;
+    color: white;
+    font-weight: 800;
+    border: black solid 3px;
+    width: 350px;
+    background-color: white;
+    transition: all ease 300ms;
+    border-radius: 5px;
+}
+.boton_reto:hover{
+    transform: scale(1.1);
+    border-radius: 20px;
+}
+#windows{
+    width: 40%;
+    position: absolute;
+    right: 0%;
+    top: 20%;
+}
+#personitas{
+    right: 10%;
+    position: absolute;
+    top: 20%;
+}
+#pc{
+    position: absolute;
+    right: 10%;
+    top: 20%;
+}
+#placa{
+    position: absolute;
+    right: 10%;
+    top: 90%;
+}

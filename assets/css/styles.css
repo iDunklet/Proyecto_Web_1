@@ -795,6 +795,7 @@ img {
   height: 200px;
   object-fit: fill;
   display: inline-block;
+  padding-left: 30px;
 }
 
 .pie {
@@ -813,10 +814,11 @@ img {
 }
 
 .box{
-  width: 35%;
+  width: 39%;
   display: inline-block;
   padding: 10px;
   text-align: left;
+  padding-left: 200px;
 }
 
 .pie .grupo-1 .box h2 {
