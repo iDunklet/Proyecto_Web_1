@@ -316,7 +316,7 @@ nav ul li ul li a:hover {
 }
 #bienvenido h1 {
   position: absolute;
-  top: 20%;
+  top: 16%;
   left: 10%;
   z-index: 10;
   color: white;
@@ -325,7 +325,7 @@ nav ul li ul li a:hover {
 }
 #bienvenido h2 {
   position: absolute;
-  top: 35%;
+  top: 27%;
   left: 10%;
   z-index: 10;
   color: white;
@@ -520,8 +520,6 @@ img {
 }
 
 #division1 {
-  font-size: large;
-  padding-top: 15px;
   width: 30%;
   view-timeline-name: --image;
   view-timeline-axis: block;
@@ -533,8 +531,6 @@ img {
   animation-fill-mode: both;
 }
 #division2 {
-  font-size: large;
-  padding-top: 15px;
   width: 30%;
   view-timeline-name: --image;
   view-timeline-axis: block;
@@ -546,8 +542,6 @@ img {
   animation-fill-mode: both;
 }
 #division3 {
-  font-size: large;
-  padding-top: 15px;
   width: 30%;
   view-timeline-name: --image;
   view-timeline-axis: block;
@@ -560,8 +554,9 @@ img {
 }
 #division1_1 {
   border: #0a1a2a solid 2px;
-  height: 50px;
+  height: 80px;
   background-color: #9e96de;
+  padding: 10px;
 }
 #division2_1 {
   border: #0a1a2a solid 2px;
@@ -575,6 +570,9 @@ img {
 }
 #division1_1 span {
   color: white;
+  font-size: 50px;
+  font-weight: 700;
+  
 }
 #division2_1 span {
   color: white;
