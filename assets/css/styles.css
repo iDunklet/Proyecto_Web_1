@@ -20,21 +20,58 @@ header {
 
 
 body {
-  background-color: #ddfafc;
+  background-color: #fbfff1;
+}
+/*search*/
+
+.group {
+  display: flex;
+  line-height: 30px;
+  align-items: center;
+  position: absolute;
+  max-width: 300px;
+  right: 9%;
+  top: 15%;
+
 }
 
-input {
+.input {
+  width: 100%;
+  height: 50px;
+  line-height: 40px;
+  padding: 1 2rem;
+  padding-left: 2.5rem;
+  border: 2px solid transparent;
+  border-radius: 8px;
   outline: none;
-  box-sizing: border-box;
-  height: 20px;
-  width: 0;
-  padding: 0 20px;
-  color: #000;
-  border-radius: 50px;
-  font-size: 15px;
-  border: 1px solid #ffffff;
-  transition: all 700ms ease;
+  background-color: #fbfff1;
+  color: #5f8671;
+  transition: 0.3s ease;
+  font-size: 20px;
 }
+
+.input::placeholder {
+  color: #5f8671;
+}
+
+.input:focus,
+input:hover {
+  outline: none;
+  border-color: rgba(0, 48, 73, 0.4);
+  background-color: #fbfff1;
+  box-shadow: 0 0 0 4px rgb(0 48 73 / 10%);
+}
+
+.icon {
+  position: absolute;
+  left: 0rem;
+  fill: #5f8671;
+  width: 2rem;
+  height: 2rem;
+}
+
+/*--*/
+
 
 nav {
   height: 100%;
@@ -57,17 +94,18 @@ nav > ul > li > a {
   display: flex;
   align-items: center;
   padding: 26px;
-  color: white;
+  color: #818962;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
   transition: all 500ms ease;
 }
 
 nav > ul > li > a:hover {
   transform: scale(1.09);
-  background-color: #8d81e6;
+  background-color: #5f8671;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
+  color: #fbfff1;
 }
 
 
@@ -130,7 +168,7 @@ nav > ul > li > a:hover {
 }
 .btn i {
   font-size: 20px;
-  color: #b0a4fe;
+  color: #5f8671;
   line-height: 30px;
   transition: all 700ms ease;
   padding-top: 4px;
@@ -158,9 +196,9 @@ nav > ul > li > a:hover {
 .container__menu {
   width: 100%;
   height: 70px;
-  background: #b0a4fe;
+  background: #fbfff1;
   padding: 0px 20px;
-  border: #564aaf solid 1px;
+  border: #5f8671 solid 1px;
 }
 
 .menu {
@@ -170,19 +208,20 @@ nav > ul > li > a:hover {
 
 .presupuesto {
   position: absolute;
-  left: 60%;
+  left: 55%;
+  
 }
 
 /*submenu*/
 .reto_D {
   position: absolute;
-  left: 70%;
+  left: 68%;
 }
 
 nav ul .presupuesto ul {
   width: 200px;
   display: flex;
-  background: #b0a4fe;
+  background: #fbfff1;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 90px;
@@ -193,6 +232,7 @@ nav ul .presupuesto ul {
   z-index: 10;
   transition: all 300ms ease;
   flex-direction: column;
+  
 }
 nav ul .presupuesto:hover ul {
   visibility: visible;
@@ -202,7 +242,7 @@ nav ul .presupuesto:hover ul {
 nav ul .reto_D ul {
   width: 200px;
   display: flex;
-  background: #b0a4fe;
+  background: #fbfff1;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 90px;
@@ -222,7 +262,7 @@ nav ul .reto_D:hover ul {
 #FASE1 ul {
   width: 200px;
   display: flex;
-  background: #b0a4fe;
+  background: #fbfff1;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 200px;
@@ -243,7 +283,7 @@ nav ul .reto_D:hover ul {
 #FASE2 ul {
   width: 200px;
   display: flex;
-  background: #b0a4fe;
+  background: #fbfff1;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 200px;
@@ -264,7 +304,7 @@ nav ul .reto_D:hover ul {
 #FASE3 ul {
   width: 200px;
   display: flex;
-  background: #b0a4fe;
+  background: #fbfff1;
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
   position: absolute;
   top: 200px;
@@ -285,7 +325,7 @@ nav ul .reto_D:hover ul {
 
 nav ul li ul li a {
   display: block;
-  color: #ffffff;
+  color: #292627;
   padding: 6px;
   padding-left: 14px;
   margin-top: 10px;
@@ -295,7 +335,7 @@ nav ul li ul li a {
   flex-direction: column;
 }
 nav ul li ul li a:hover {
-  background: #8d81e6;
+  background: #5f8671;
   color: #fff;
   transform: scale(1.1);
   padding-left: 30px;
@@ -320,18 +360,18 @@ nav ul li ul li a:hover {
   top: 16%;
   left: 10%;
   z-index: 10;
-  color: white;
-  font-size: 90px;
-  opacity: 0.9;
+  color: #818962;
+  font-size: 150px;
+  opacity: 1;
 }
 #bienvenido h2 {
   position: absolute;
-  top: 27%;
+  top: 30%;
   left: 10%;
   z-index: 10;
-  color: white;
+  color: #818962;
   font-size: 70px;
-  opacity: 0.9;
+  opacity: 1;
 }
 /*cuerpo*/
 
@@ -342,25 +382,69 @@ nav ul li ul li a:hover {
   height: auto;
   justify-content: center;
   align-items: center;
-  background: #0c0ce94d;
+  background: #fbfff1;
   padding-bottom: 20px;
 }
 #random {
-  height: 500px;
+  height: 600px;
   width: 100%;
-}
-.container_habilidades {
-  width: 45%;
-  height: 23%;
-  background: #c9ddff;
-  margin: 1% 2%;
+  padding-top: 30px;
   text-align: center;
-  display: inline-block;
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  border: solid #94bbff 1px;
 }
+.three-d-card {
+  position: relative;
+  width: 20%;
+  height: 200px;
+  perspective: 1000px;
+  display: inline-block;
+  margin: 1% 5.4%;
+  
+}
+
+.card-wrapper {
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.three-d-card:hover .card-wrapper {
+  transform: rotateY(180deg);
+}
+
+.card-face {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #818962;
+  border-radius: 15px;
+  background-color: #fbfff1;
+}
+
+.card-face.front {
+  transform: rotateY(0deg);
+}
+
+.card-face.back {
+  transform: rotateY(180deg);
+}
+
+.card-content {
+  text-align: center;
+  color: #333;
+}
+
+.card-title {
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
 /*--------------------------------formulario-------------------------------*/
 /* ----------------------------------------------
  * Generated by Animista on 2024-3-8 11:7:23
@@ -386,99 +470,6 @@ nav ul li ul li a:hover {
 }
 
 
-.form {
-  width: 80%;
-  margin: 0 auto;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  height: 100px; /* Altura inicial (ajusta según sea necesario) */
-  overflow: hidden; /* Para ocultar inicialmente el contenido */
-  cursor: pointer;
-  
-}
-
-.form:hover {
-  height: auto; /* Mostrar todo el contenido cuando el formulario está en hover */
-  transform: translateY(-10px) ; /* Agregado: Efecto de desplazamiento hacia arriba */
-  animation: slide-in-top 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-
-}
-
-
-.form_header {
-  text-align: left;
-  margin-bottom: 30px;
-  color: #000;
-}
-
-.title h1 {
-  margin: 0;
-  font-size: 48px;
-  color: #333;
-  transition: font-size 0.3s;
-}
-
-.input_group {
-  display: flex;
-  flex-direction: column;
-  cursor: default;
-}
-
-.input_box {
-  margin-bottom: 20px;
-  border: 2px solid rgb(221, 221, 221);
-  padding: 5px;
-  border-radius: 10px;
-}
-
-label {
-  display: block;
-  font-weight: bold;
-  margin-bottom: 10px;
-  color: #333;
-}
-
-input,
-select {
-  width: 100%;
-  padding: 12px;
-  margin-bottom: 20px;
-  border: 1px solid #797979;
-  border-radius: 8px;
-  transition: transform 0.3s;
-}
-
-input:hover,
-select:hover {
-  transform: scale(1.005);
-}
-
-.continue-button {
-  text-align: center;
-  margin-top: 30px;
-}
-
-.continue-button button {
-  background-color: #00fbff;
-  color: #fff;
-  padding: 20px 40px;
-  font-size: 20px;
-  border: none;
-  border-radius: 8px;
-  text-decoration: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-}
-
-.continue-button button:hover {
-  background-color: #cecece;
-}
-
-.continue-button button a {
-  color: white;
-}
 
 
 /*---------------------------------------------------------------------------*/
@@ -504,358 +495,154 @@ img {
   animation-range: entry 25% cover 30%;
   animation-fill-mode: both;
 }
-.fase1 {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
 
-  animation-timeline: --image;
-  animation-name: show;
 
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-}
-.fase2 {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
 
-  animation-timeline: --image;
-  animation-name: show;
 
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-}
-#fase3 {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
 
-  animation-timeline: --image;
-  animation-name: show;
 
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-}
 
-/*dividir fases*/
-
-@keyframes divisiones {
-  from {
-    transform: translateX(0);
-  }
-
-  to {
-    transform: translateX(50%);
-  }
-}
-
-#division1 {
-  width: 30%;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-
-  animation-timeline: --image;
-  animation-name: divisiones;
-
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-}
-#division2 {
-  width: 30%;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-
-  animation-timeline: --image;
-  animation-name: divisiones;
-
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-}
-#division3 {
-  width: 30%;
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-
-  animation-timeline: --image;
-  animation-name: divisiones;
-
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-}
-#division1_1 {
-  border: #0a1a2a solid 2px;
-  height: 80px;
-  background-color: #9e96de;
-  padding: 10px;
-}
-#division2_1 {
-  border: #0a1a2a solid 2px;
-  height: 80px;
-  background-color: #9e96de;
-  padding: 10px;
-}
-#division3_1 {
-  border: #0a1a2a solid 2px;
-  height: 80px;
-  background-color: #9e96de;
-  padding: 10px;
-}
-#division1_1 span {
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
-  
-}
-#division2_1 span {
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
-}
-#division3_1 span {
-  color: white;
-  font-size: 50px;
-  font-weight: 700;
-}
 
 /*resumenes*/
 
-/*3*/
-.button_resume3 {
-  background-color: #a6bbde;
-  color: white;
-  background: #a6bbde;
-  width: 90%;
-  height: 100px;
-  padding: 20px;
-  border-radius: 20px;
-  border: 2px solid #b0a4fe;
-  margin-left: 20px;
-  transition: all 300ms ease;
-  margin-top: 100px;
-  opacity: 0.9;
-  .mas_info {
-    visibility: hidden;
-    color: white;
-    transition: all 300ms ease;
-    opacity: 0;
-  }
-}
-.button_resume3:hover {
-  cursor: pointer;
-  padding-left: 25px;
-  margin-left: 28px;
-  background-color: #95aed9;
-  .mas_info {
-    visibility: visible;
-    transition: all 300ms ease;
-    opacity: 1;
-  }
-}
-#container_fase3 {
+#container_resumenes{
+  width: 100%;
+  height: 2000px  ;
   display: inline-block;
-  width: 100%;
-  height: 500px;
-  justify-content: space-between;
 }
-@keyframes derecha {
-  from {
-    left: -50%;
-  }
-  to {
-    left: 35%;
-  }
+.Container_fase{
+  text-align: center;
+  font-size: 30px;
+  background-color: #98b7a6;
+  width: 30%;
+  margin: 0 auto;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
-#fase3 {
-  width: 38%;
+.fase {
+  text-align: center;
+  font-size: 30px;
+  background-color: #98b7a6;
+}
+#left .fase{
+  border-top-right-radius: 20px;
+}
+#right .fase{
+  border-top-left-radius: 20px;
+}
+#left {
+  width: 30%;
+  display: inline-block;
+}
+#left .card{
+  margin: 15% 5%;
+}
+#right{
   position: absolute;
-  z-index: 10;
-  left: 35%;
-  animation: derecha 5s forwards;
-  view-timeline-name: --fase3;
-  view-timeline-axis: block;
-
-  animation-timeline: --fase3;
-  animation-name: derecha;
-
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
+  right: 0%;
+  width: 30%;
+  display: inline-block;
 }
-#imagen3 {
-  width: 100%;
-  height: 1000px;
-  border: 2px #b0a4fe solid;
+.fa-solid{
+  font-size: 90px;
+  color: #5f8671;
 }
-
-/*2*/
-#container_fase2 {
-  width: 100%;
-  height: 1000px;
+.card {
+  position: relative;
+  width: 90%;
+  margin: 5%;
+  aspect-ratio: 16/9;
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  perspective: 1000px;
+  box-shadow: 0 0 0 5px #ffffff80;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.button_resume2 {
-  background-color: #a6bbde;
-  color: white;
-  background: #a6bbde;
+.card svg {
+  width: 48px;
+  fill: #333;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+.card__image {
   width: 100%;
-  height: 100px;
+  height: 100%;
+}
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+.card__content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   padding: 20px;
-  border-radius: 20px;
-  border: 2px solid #b0a4fe;
-  margin-left: 20px;
-  transition: all 300ms ease;
-  margin-top: 40px;
-  opacity: 0.9;
-
-  .mas_info {
-    visibility: hidden;
-    color: white;
-    transition: all 300ms ease;
-    opacity: 0;
-  }
+  box-sizing: border-box;
+  background-color: #f2f2f2;
+  transform: rotateX(-90deg);
+  transform-origin: bottom;
+  transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
-.button_resume2:hover {
-  cursor: pointer;
-  padding-left: 25px;
-  margin-left: 28px;
-  background-color: #95aed9;
-  margin-top: 45px;
-  .mas_info {
-    visibility: visible;
-    transition: all 300ms ease;
-    opacity: 1;
-  }
+.card:hover .card__content {
+  transform: rotateX(0deg);
 }
-.fase2 {
-  margin-right: 20px;
-  width: 45%;
-  position: absolute;
-  z-index: 10;
-  right: 50%;
-  margin-top: 9%;
+.card__title {
+  margin: 0;
+  font-size: 40px;
+  color: #333;
+  font-weight: 700;
 }
-#imagen2 {
-  width: 100%;
-  height: 1000px;
-  object-fit: cover;
-  border: 2px #b0a4fe solid;
+.card__description {
+  margin: 10px 0 10px;
+  font-size: 30px;
+  color: #777;
+  line-height: 1.4;
 }
-
-/*2*/
-#container_fase1 {
-  display: block;
-  width: 100%;
-  height: 1000px;
-  justify-content: space-between;
-}
-.fase1 {
-  width: 45%;
-  margin-right: 20px;
-  margin-top: 13%;
-  position: absolute;
-  z-index: 10;
-  left: 50%;
-  
-}
-#imagen {
-  width: 100%;
-  height: 1000px;
-  object-fit: cover;
-
-  border: 2px #52489c solid;
-}
-.button_resume1 {
-  background-color: #a6bbde;
+.card__button {
+  padding: 15px;
+  border-radius: 8px;
+  background: #777;
+  border: none;
   color: white;
-  background: #a6bbde;
-  width: 95%;
-  height: 100px;
-  padding: 20px;
-  border-radius: 20px;
-  border: 2px solid #b0a4fe;
-  margin-left: 20px;
-  transition: all 300ms ease;
-  margin-top: 40px;
-  opacity: 0.9;
+}
 
-  .mas_info {
-    visibility: hidden;
-    color: white;
-    transition: all 300ms ease;
-    opacity: 0;
-  }
+.secondary {
+  background: transparent;
+  color: #777;
+  border: 1px solid #777;
 }
-.button_resume1:hover {
-  cursor: pointer;
-  padding-right: 25px;
-  margin-left: 28px;
-  background-color: #95aed9;
-  margin-top: 45px;
-  .mas_info {
-    visibility: visible;
-    transition: all 300ms ease;
-    opacity: 1;
-  }
-}
+
+
+
 /*randoms de los resumenes*/
-.button_resume1 > a > span {
-  color: white;
+
+#fase3_page{
+  background-color: #fbfff1;
+  border: solid 2px #292627;
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 80px;
 }
-.button_resume1 > a > h2 {
-  color: white;
+#Container_fase3{
+  width: 100%;
+  height: 400px;
 }
-.button_resume1 a div{
-  width: 20px;
-  height: 90px;
-  padding: 5px;
-  position: absolute;
-  right: 20%;
-  font-size: 50px;
-}
-.button_resume1 a div i{
-  position: absolute;
-  top: -62%;
-  color: white;
-}
-.button_resume2 a div{
-  width: 20px;
-  height: 90px;
-  padding: 5px;
-  position: absolute;
-  right: 20%;
-  font-size: 50px;
-}
-.button_resume2 a div i{
-  position: absolute;
-  top: -62%;
-  color: white;
-}
-.button_resume3 a div{
-  width: 20px;
-  height: 90px;
-  padding: 5px;
-  position: absolute;
-  right: 20%;
-  font-size: 50px;
-}
-.button_resume3 a div i{
-  position: absolute;
-  top: -62%;
-  color: white;
-}
-.mas_info {
-  visibility: hidden;
-  transition: all 300ms ease;
-}
-.button_resume2 > a > span {
-  color: white;
-}
-.button_resume2 > a > h2 {
-  color: white;
-}
-.button_resume3 > a > span {
-  color: white;
-}
-.button_resume3 > a > h2 {
-  color: white;
-}
+
+
+
+
+
+
+
+
+
+
 
 /*---*/
 
