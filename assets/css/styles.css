@@ -609,18 +609,24 @@ img {
 .Container_fase{
   text-align: center;
   font-size: 50px;
-  background-color: #98b7a6;
+  background-color: #fbfff1;
   width: 30%;
   margin: 0 auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  border: #292627 solid 3px;
+  color: #292627;
+}
+.Container_fase span{
+  color: #292627
 }
 
 .fase {
   text-align: center;
   font-size: 50px;
-  background-color: #98b7a6;
-  color: #fbfff1;
+  background-color: #fbfff1;
+  color: #292627;
+  border: #292627 solid 3px;
 }
 #left .fase{
   border-top-right-radius: 20px;
