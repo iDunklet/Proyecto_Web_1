@@ -11,16 +11,18 @@
 }
 #normativa{
     padding: 10px;
-    background-color:  #8d81e6;
-    border: 2px solid #524b87;
+    background-color:  #fbfff1;
+    border: 2px solid #292627;
     font-weight: 600;
-    color: white;
+    color: #f0b736;
     margin-left: 10px;
     transition: all ease 300ms;
 }
 #normativa:hover{
     padding: 12px;
     border-radius: 15px;
+    color: #fbfff1;
+    background-color: #292627;
 }
 .article_1 h1{
     font-size: 60px;
@@ -55,23 +57,34 @@
 .boton_reto{
     margin: 80px 20%;
     padding: 20px;
-    color: white;
     font-weight: 800;
     border: black solid 3px;
-    width: 350px;
+    width: 400px;
     background-color: white;
     transition: all ease 300ms;
-    border-radius: 5px;
+    border-radius: 15px;
+    margin-bottom: 230px;
+}
+.boton_reto a{
+    color: #292627;
+    font-size: 20px;
 }
 .boton_reto:hover{
     transform: scale(1.1);
     border-radius: 20px;
+    cursor: pointer;
+    
+    background-color: #292627;
+}
+.boton_reto:hover a{
+    color: #fbfff1;
 }
 #windows{
     width: 40%;
     position: absolute;
     right: 0%;
     top: 10%;
+    
 }
 #personitas{
     right: 10%;
