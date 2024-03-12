@@ -311,20 +311,35 @@ nav > ul > li > a:hover {
 
 .presupuesto {
   position: absolute;
-  left: 60%;
+  left: 65%;
   
 }
 
 /*submenu*/
 .reto_D {
   position: absolute;
-  left: 72%;
+  left: 75%;
 }
-#formulario_link{
+#formulario_link {
   position: absolute;
-  left: 53%;
+  left: 56%;
   font-size: 20px;
-  color: #5f8671;
+  padding: 23px;
+  transition: all ease 300ms ;
+}
+#formulario_link:hover {
+  background-color: #f0b736;
+  scale: 1.09;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#formulario_link:hover a{
+  color: #fbfff1;
+  
+}
+#formulario_link a{
+  color: #f0b736;
+  text-transform: uppercase;
 }
 nav ul .presupuesto ul {
   width: 200px;
@@ -468,7 +483,7 @@ nav ul li ul li a:hover {
   top: 16%;
   left: 10%;
   z-index: 10;
-  color: #818962;
+  color: #fbfff1;
   font-size: 150px;
   opacity: 1;
 }
@@ -477,7 +492,7 @@ nav ul li ul li a:hover {
   top: 30%;
   left: 10%;
   z-index: 10;
-  color: #818962;
+  color: #fbfff1;
   font-size: 70px;
   opacity: 1;
 }
@@ -521,13 +536,14 @@ nav ul li ul li a:hover {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 2px solid #818962;
+  border: #292627 solid 4px;
   border-radius: 15px;
   background-color: #fbfff1;
 }
 
 .card-face.front {
   transform: rotateY(0deg);
+
 }
 
 .card-face.back {
@@ -614,7 +630,7 @@ img {
   margin: 0 auto;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  border: #292627 solid 3px;
+  border: #292627 solid 4px;
   color: #292627;
 }
 .Container_fase span{
@@ -626,7 +642,7 @@ img {
   font-size: 50px;
   background-color: #fbfff1;
   color: #292627;
-  border: #292627 solid 3px;
+  border: #292627 solid 4px;
 }
 #left .fase{
   border-top-right-radius: 20px;
@@ -651,6 +667,77 @@ img {
   font-size: 90px;
   color: #5f8671;
 }
+.cube-container {
+  width: 200px;
+  height: 200px;
+  perspective: 800px;
+  margin: 50px auto;
+  position: absolute;
+  left: 45%;
+  bottom: -1800px;
+}
+
+.cube {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  animation: rotate 10s infinite linear;
+}
+
+.face {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  color: rgb(41, 38, 39);
+  font-size: 18px;
+  text-align: center;
+  line-height: 200px;
+  background: transparent;
+  opacity: 0.9;
+  border: 4px solid;
+  
+}
+
+.front {
+  transform: translateZ(100px);
+}
+
+.back {
+  transform: rotateY(180deg) translateZ(100px);
+}
+
+.right {
+  transform: rotateY(90deg) translateZ(100px);
+}
+
+.left {
+  transform: rotateY(-90deg) translateZ(100px);
+}
+
+.top {
+  transform: rotateX(90deg) translateZ(100px);
+}
+
+.bottom {
+  transform: rotateX(-90deg) translateZ(100px);
+}
+
+
+
+@keyframes rotate {
+  0% {
+    transform: rotateX(0) rotateY(0) rotateZ(0);
+  }
+
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+
+
+
 .card {
   position: relative;
   width: 90%;
@@ -658,6 +745,7 @@ img {
   aspect-ratio: 16/9;
   background-color: #f2f2f2;
   border-radius: 10px;
+  
   display: flex;
   align-items: center;
   justify-content: center;
@@ -665,6 +753,7 @@ img {
   perspective: 1000px;
   box-shadow: 0 0 0 5px #ffffff80;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  height: 350px;
 }
 .card svg {
   width: 48px;
@@ -1006,6 +1095,8 @@ img {
 }
 
 
+/*cubo*/
+
 
 
 
@@ -1015,18 +1106,73 @@ img {
 /*pie*/
 /*---------------------------------------------------------------------------------------------------------------------------------------------*/
 
-.foto {
-  width: 60%;
-  height: 200px;
-  object-fit: fill;
-  display: inline-block;
-  padding-left: 30px;
+.socials-container {
+  width: fit-content;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  padding: 20px 40px;
+  background-color: #292627;
+  margin: 0 auto;
 }
+.social {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgb(194, 194, 194);
+}
+.twitter:hover {
+  background: linear-gradient(45deg, #66757f, #00acee, #36daff, #dbedff);
+}
+.facebook:hover {
+  background: linear-gradient(45deg, #134ac0, #316ff6, #78a3ff);
+}
+.google-plus:hover {
+  background: linear-gradient(45deg, #872419, #db4a39, #ff7061);
+}
+.instagram:hover {
+  background: #f09433;
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+}
+.social svg {
+  fill: white;
+  height: 20px;
+}
+
 
 .pie {
   bottom: 0;
   width: 100%;
-  background-color: #13203a;
+  background-color: #292627;
   color: #fff;
   text-align: center;
 }
@@ -1038,48 +1184,18 @@ img {
   padding: 45px 0px;
 }
 
-.box{
-  width: 39%;
-  display: inline-block;
-  padding: 10px;
-  text-align: left;
-  padding-left: 200px;
-}
+
 
 .pie .grupo-1 .box h2 {
   color: #fff;
   margin-bottom: 25px;
   font-size: 20px;
 }
-
-.pie .grupo-1 .box h3 {
-  color: #efefef;
-  margin-bottom: 10px;
+.grupo-2{
+  background-color: black;
+  
 }
 
-.pie .grupo-1 .red-social a {
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 45px;
-  color: #fff;
-  margin-right: 10px;
-  background-color: #0d2033;
-  text-align: center;
-  transition: all 300ms ease;
-}
-.pie .grupo-1 .red_socia a:hover {
-  color: aqua;
-}
-.pie .grupo-2 {
-  background-color: #0a1a2a;
-  padding: 15px 10px;
-  text-align: center;
-  color: #fff;
-}
-.pie .grupo-2 small {
-  font-size: 15px;
-}
 
 @media screen and (max-width: 800px) {
   .pie .grupo-1 {
@@ -1089,8 +1205,8 @@ img {
     padding: 35px 0px;
   }
   .foto {
-    width: 100px;
-    height: 50px;
+    width: 40px;
+    height: 30px;
   }
 }
 /*----------------------------------------------------------------------------------------------------------*/
