@@ -22,17 +22,35 @@
     padding: 12px;
     border-radius: 15px;
 }
+.article_1 h1{
+    font-size: 60px;
+}
+.article_1 h2{
+    font-size: 55px;
+    margin-top: 15px;
+    margin-left: 10px;
+}
 .article_1 h3{
     margin: 10px;
+    font-size: 50px;
+    margin-left: 15px;
 }
 .article_1 h5{
     margin: 10px 4px;
+    font-size: 35px;
+    margin-left: 20px;
 }
 .article_1 h4{
     margin: 10px 6px;
+    font-size: 40px;
 }
 .article_1 h6{
     margin: 10px 2px;
+    font-size: 30px;
+    margin-left: 25pxx;
+}
+.article_1 p{
+    font-size: 20px;
 }
 .boton_reto{
     margin: 80px 20%;
