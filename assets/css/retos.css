@@ -6,8 +6,16 @@
 }
 #imagen{
     position: absolute;
-    right: 20%;
-    top: 10%;
+    right: 15%;
+    top: 20%;
+}
+#imagen img{
+    border-radius: 20px;
+    border: none;
+    height: auto;
+    width: auto;
+    object-fit: cover;
+
 }
 #normativa{
     padding: 10px;

@@ -160,6 +160,7 @@ nav > ul > li > a:hover {
   font-weight: 600;
   font-size: 25px;
   color: #292627;
+  height: 30%;
 }
 
 .name-client span {
@@ -603,7 +604,7 @@ img {
 /*resumenes*/
 #container_resumenes{
   width: 100%;
-  height: 1540px  ;
+  height: auto  ;
   display: inline-block;
 }
 .Container_fase{
@@ -669,7 +670,7 @@ img {
   perspective: 1000px;
   box-shadow: 0 0 0 5px #ffffff80;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  height: 500px;
+  height: 600px;
 }
 .card svg {
   width: 48px;
@@ -714,9 +715,12 @@ img {
 .card__button {
   padding: 15px;
   border-radius: 8px;
-  background: #777;
+  font-size: 25px;
+  background-color: #fbfff1;
   border: none;
-  color: white;
+  color: #292627;
+  position: absolute;
+  bottom: 5%;
 }
 
 .secondary {
@@ -738,7 +742,7 @@ img {
   margin: 0 auto;
   margin-top: 80px;
   background-color: #f2f2f2;
-  height: auto;
+  height: 680px;
 }
 #Container_fase3{
   width: 100%;
@@ -762,7 +766,8 @@ img {
   background-color: #fbfff1;
   border-radius: 20px;
   transition: all EASE 300ms  ;
-  
+  position: absolute;
+  right: 23%;
 }
 #fase3_page a:hover{
   color: #fbfff1;
