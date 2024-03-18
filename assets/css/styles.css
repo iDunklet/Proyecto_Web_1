@@ -1,5 +1,5 @@
 /* Todo: Fix this import */
-@import "../ttf/Inter-VariableFont_slnt\,wght.ttf";
+
 
 * {
   margin: 0;
@@ -7,6 +7,7 @@
   box-sizing: border-box;
   font-family: "Inter";
   text-decoration: none;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 header {
   width: 100%;
@@ -112,7 +113,7 @@ nav > ul > li > a:hover {
 #container_membros{
   display: flex;
   width: 100%;
-  height: auto;
+  height: 100%;
   padding: 50px;
   gap: 10rem;
 }
@@ -160,7 +161,7 @@ nav > ul > li > a:hover {
   font-weight: 600;
   font-size: 25px;
   color: #292627;
-  height: 30%;
+  height: 35%;
 }
 
 .name-client span {
@@ -195,7 +196,7 @@ nav > ul > li > a:hover {
   width: 1.1rem;
   fill: currentColor;
 }
-
+ 
 /*-- Tooltip Social Media --*/
 .tooltip-social {
   background: #262626;
@@ -390,6 +391,7 @@ nav ul .reto_D:hover ul {
   z-index: 10;
   transition: all 300ms ease;
   flex-direction: column;
+  
 }
 #FASE1:hover ul {
   visibility: visible;
@@ -467,7 +469,7 @@ nav ul li ul li a:hover {
 }
 #bienvenido img {
   width: 100%;
-  height: 1000px;
+  height: 1200px;
   margin-top: 70px;
   object-fit: cover;
   
@@ -483,8 +485,8 @@ nav ul li ul li a:hover {
 }
 #bienvenido h2 {
   position: absolute;
-  top: 30%;
-  left: 10%;
+  top: 32%;
+  left: 11%;
   z-index: 10;
   color: #fbfff1;
   font-size: 70px;
@@ -532,7 +534,7 @@ nav ul li ul li a:hover {
   justify-content: center;
   border: #292627 solid 4px;
   border-radius: 15px;
-  background-color: #fbfff1;
+  background-color: #5f8671;
 }
 
 .card-face.front {
@@ -546,7 +548,7 @@ nav ul li ul li a:hover {
 
 .card-content {
   text-align: center;
-  color: #333;
+  color: #fbfff1;
 }
 
 .card-title {
@@ -670,7 +672,7 @@ img {
   perspective: 1000px;
   box-shadow: 0 0 0 5px #ffffff80;
   transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  height: 600px;
+  height: 700px;
 }
 .card svg {
   width: 48px;
@@ -702,7 +704,7 @@ img {
 }
 .card__title {
   margin: 0;
-  font-size: 40px;
+  font-size: 35px;
   color: #333;
   font-weight: 700;
 }
@@ -742,7 +744,7 @@ img {
   margin: 0 auto;
   margin-top: 80px;
   background-color: #f2f2f2;
-  height: 680px;
+  height: auto;
 }
 #Container_fase3{
   width: 100%;
@@ -766,8 +768,7 @@ img {
   background-color: #fbfff1;
   border-radius: 20px;
   transition: all EASE 300ms  ;
-  position: absolute;
-  right: 23%;
+  margin-left: 75%;
 }
 #fase3_page a:hover{
   color: #fbfff1;
@@ -948,7 +949,7 @@ img {
 .fancy .text {
   font-size: 1.125em;
   line-height: 1.33333em;
-  padding-left: 5em;
+  padding-left: 10.5em;
   display: block;
   text-align: left;
   transition: all 0.3s ease-in-out;
@@ -956,6 +957,7 @@ img {
   text-decoration: none;
   color: #818181;
   transform: translateX(30%);
+  width: 400px;
 }
 
 .fancy .top-key {

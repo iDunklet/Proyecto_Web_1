@@ -1,3 +1,7 @@
+
+*{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
 .article_1{
     margin-top: 90px;
     display: inline-block;
@@ -33,34 +37,42 @@
     background-color: #292627;
 }
 .article_1 h1{
-    font-size: 60px;
+    font-size: 55px;
+    margin-bottom: 20px;
+    margin-left: 10px;
 }
 .article_1 h2{
     font-size: 55px;
     margin-top: 15px;
     margin-left: 10px;
+    
 }
 .article_1 h3{
-    margin: 10px;
+    margin: 30px;
     font-size: 50px;
     margin-left: 15px;
+    border-bottom: solid black 2px;
 }
 .article_1 h5{
-    margin: 10px 4px;
+    margin: 30px;
     font-size: 35px;
-    margin-left: 20px;
+    margin-left: 35px;
+    font-weight: 100;
 }
 .article_1 h4{
-    margin: 10px 6px;
+    margin: 30px;
+    margin-left: 25px;
     font-size: 40px;
+    border-bottom: solid grey 2px;
 }
 .article_1 h6{
     margin: 10px 2px;
     font-size: 30px;
-    margin-left: 25pxx;
+    margin-left: 45px;
 }
 .article_1 p{
     font-size: 20px;
+    margin-left: 50px;
 }
 .boton_reto{
     margin: 80px 20%;
@@ -99,13 +111,42 @@
     position: absolute;
     top: 20%;
 }
+#personitas img{
+    object-fit: fill;
+    height: 700px;
+    width: 700px;
+}
 #pc{
     position: absolute;
     right: 10%;
     top: 20%;
 }
+#pc img{
+    object-fit: fill;
+    height: 800px;
+    width: 700px;
+    border-radius: 30px;
+}
 #placa{
     position: absolute;
     right: 10%;
-    top: 90%;
+    top: 150%;
+}
+#placa img{
+    object-fit: fill;
+    height: 500px;
+    width: 700px;
+    border-radius: 30px;
+    transform: rotate(90deg);
+}
+#Plano{
+    position: absolute;
+    right: 2%;
+    top: 15%;
+}
+#Plano img{
+    object-fit:fill;
+    height: 600px;
+    width: 900px;
+    border-radius: 40px;
 }
