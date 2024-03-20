@@ -14,7 +14,7 @@
         <div class="container__menu">
             <div class="menu">
                 <nav>
-                  
+                  <div id="formulario_link"><a href="/index.html#salto_form">Formulario</a></div>
                   <div class="group">
                     <svg viewBox="0 0 24 24" aria-hidden="true" class="icon">
                       <g>
@@ -77,14 +77,39 @@
     </header>
 
  <div class="article_1">
-    <h1></h1>
-    <h2></h2>
-        <h3></h3>
-            <p></p>
-        <h3></h3>  
-            <p></p> 
+    <h1>Implementación de servidores Linux y Windows</h1>
+    <h2>Reto 10 - Fase 2</h2>
+        <h3>Windows Server</h3>
+        <p>Implementamos DHCP en nuestro servidor para asignar cambios automáticos de IPs cada 3 días, facilitando el monitoreo y eliminando la necesidad de configuración manual en los dispositivos conectados.</p>
+            <h4>DHCP en Windows</h4>
+              <p>Nuestro servicio DHCP en Windows utiliza un "Scope" para establecer el rango de IPs disponibles (172.16.1.26 a 172.16.1.254) que cambian semanalmente. Intentamos asignar rangos exclusivos por clase (por ejemplo, 172.16.11.X para la clase 1), pero sin VLANs, no es posible. Las IPs 172.16.X.1 a 172.16.X.25 están reservadas, y se asignan rangos exclusivos para profesores en cada clase.</p>
+            <h4>DNS en Windows</h4>
+              <p>Instalamos DNS y Active Directory, eligiendo el servidor como "pingpongers.com" y configurando el nombre de red para los usuarios. Creamos zonas directa e inversa (pingpongers.com sin .ni), junto con direcciones como www.escuelalabdoo.com y ftp.escuelalabdoo.com, y configuramos un redirigidor de correos. Finalmente, vinculamos todos los bloques a la zona inversa creada.</p>
+            <h4>FTP en Windows</h4>
+              <p>Instalamos el servidor FTP mediante el servicio IIS y creamos una carpeta "FTP" en el disco C: para almacenar archivos. Configuramos permisos de escritura para todos los usuarios y creamos un usuario "ftp" con permisos de solo lectura. Deshabilitamos los permisos hereditarios para evitar accesos no deseados. En IIS, creamos un nuevo sitio web FTP, vinculándolo a la carpeta creada y especificando la IP del sitio sin SSL. Configuramos la autenticación y autorización para dar acceso a todos los usuarios. Finalmente, probamos la conexión iniciando sesión con el usuario de pruebas. Configuramos una regla de firewall para permitir la conexión de clientes.</p>
+            <h4>(EXTRA) IIS en Windows</h4>
+              <p>Para configurar una página web por defecto en Windows, utilizamos IIS. Accedemos al "Default Web Site" y revisamos la configuración del documento por defecto, generalmente "index.html". Reemplazamos este archivo por nuestro propio archivo HTML. En la carpeta de la página web, sustituimos todos los archivos por los que queremos que sean los predeterminados. Así, cada vez que se accede a nuestra IP o a la dirección DNS correspondiente, se mostrará nuestro documento por defecto.</p>
+            <h4>Proxy en Windows</h4>
+              <p></p>
+            <h4>Servicio de correo electrónico en Windows</h4>
+              <p>
+                Instalamos hMailServer para el servicio de correo electrónico. Nos conectamos al servidor local, configuramos el dominio (igual al del servidor DNS). Creamos usuarios en la carpeta "Cuentas". Configuramos las cuentas en el cliente de correo (por ejemplo, ThunderBird) utilizando IMAP. Aceptamos advertencias de seguridad si es necesario. Para enviar correos, redactamos un nuevo mensaje en el cliente de correo y comprobamos la entrega correctamente.</p>
+        <h3>Ubuntu Server</h3>  
+            <h4>DHCP en Ubuntu</h4>
+              <p>La configuración de red en Ubuntu establece una IP estática para el servidor (172.16.1.10). Se intentó inicialmente configurar VLANs para clases específicas, pero no se logró. El archivo de configuración incluye el nombre de dominio "escuelalabdoo.com" y define subredes, siendo funcional solo la subnet principal para asignar IPs a las PCs. Se especifica qué interfaces de red debe escuchar el servidor. Se verifica el correcto funcionamiento del servicio.</p>
+            <h4>DNS en Ubuntu</h4>
+              <p></p>
+            <h4>FTP en Ubuntu</h4>
+              <p></p>
+            <h4>Proxy en Ubuntu</h4> 
+              <p></p>
+            <h4>Servicio de correo electrónico en Ubuntu</h4>
+              <p></p> 
         <h3></h3> 
-        <footer class="pie">
+</div>
+
+
+<footer class="pie">
             <div class="grupo-1">
               <div class="socials-container">
                 <a href="#" class="social twitter">
@@ -99,8 +124,7 @@
                   ><svg height="1em" viewBox="0 0 320 512">
                     <path
                       d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                    ></path></svg
-                ></a>
+                    ></path></svg></a>
               
                 
               
@@ -108,16 +132,12 @@
                   ><svg height="1em" viewBox="0 0 448 512">
                     <path
                       d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                    ></path></svg
-                ></a>
-              </div>
-                 
-                
-                
+                    ></path></svg></a>
+              </div>  
             </div>
             <div class="grupo-2">
                 <small>&copy; 2024 <b>Labdoo</b> - Todos los Derechos Reservados.</small>
             </div>
-        </footer>
+</footer>
 </body>
 </html>

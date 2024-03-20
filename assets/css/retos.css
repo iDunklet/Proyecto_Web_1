@@ -150,3 +150,12 @@
     width: 900px;
     border-radius: 40px;
 }
+#cisco{
+    position: absolute;
+    right: 9%;
+    top: 50%;
+}
+#cisco img{
+    border-radius: 30px;
+
+}
