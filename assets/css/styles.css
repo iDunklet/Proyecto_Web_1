@@ -306,18 +306,18 @@ nav > ul > li > a:hover {
 
 .presupuesto {
   position: absolute;
-  left: 65%;
+  left: 70%;
   
 }
 
 /*submenu*/
 .reto_D {
   position: absolute;
-  left: 75%;
+  left: 80%;
 }
 #formulario_link {
   position: absolute;
-  left: 56%;
+  left: 61%;
   font-size: 20px;
   padding: 23px;
   transition: all ease 300ms ;
