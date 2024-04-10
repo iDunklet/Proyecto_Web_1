@@ -81,7 +81,7 @@
             <h4>(EXTRA) IIS en Windows</h4>
               <p>Para configurar una página web por defecto en Windows, utilizamos IIS. Accedemos al "Default Web Site" y revisamos la configuración del documento por defecto, generalmente "index.html". Reemplazamos este archivo por nuestro propio archivo HTML. En la carpeta de la página web, sustituimos todos los archivos por los que queremos que sean los predeterminados. Así, cada vez que se accede a nuestra IP o a la dirección DNS correspondiente, se mostrará nuestro documento por defecto.</p>
             <h4>Proxy en Windows</h4>
-              <p></p>
+              <p>Para empezar, abrimos el puerto 3128 en el proxy para la comunicación con el cliente. Luego, creamos dos archivos de texto: uno para palabras vetadas y otro para URLs vetadas, ambos dentro de la carpeta "etc" de la carpeta de Squid. Posteriormente, configuramos el proxy creando ACLs para las URLs y palabras vetadas, y las denegamos usando la línea "http_access deny [acl]". Finalmente, verificamos que el proxy funcione correctamente.</p>
             <h4>Servicio de correo electrónico en Windows</h4>
               <p>
                 Instalamos hMailServer para el servicio de correo electrónico. Nos conectamos al servidor local, configuramos el dominio (igual al del servidor DNS). Creamos usuarios en la carpeta "Cuentas". Configuramos las cuentas en el cliente de correo (por ejemplo, ThunderBird) utilizando IMAP. Aceptamos advertencias de seguridad si es necesario. Para enviar correos, redactamos un nuevo mensaje en el cliente de correo y comprobamos la entrega correctamente.</p>
@@ -89,14 +89,15 @@
             <h4>DHCP en Ubuntu</h4>
               <p>La configuración de red en Ubuntu establece una IP estática para el servidor (172.16.1.10). Se intentó inicialmente configurar VLANs para clases específicas, pero no se logró. El archivo de configuración incluye el nombre de dominio "escuelalabdoo.com" y define subredes, siendo funcional solo la subnet principal para asignar IPs a las PCs. Se especifica qué interfaces de red debe escuchar el servidor. Se verifica el correcto funcionamiento del servicio.</p>
             <h4>DNS en Ubuntu</h4>
-              <p></p>
+              <p>La configuración del DNS incluye una zona directa y una inversa, donde se definen servicios como mail, www y el nombre de dominio. Se ajusta un archivo de configuración para usar las zonas creadas, asegurando que los servicios estén configurados correctamente. Además, se establece la identificación de red para que el DNS la reconozca.
+              </p>
             <h4>FTP en Ubuntu</h4>
-              <p></p>
+              <p>Primero, instalamos el paquete necesario, en este caso vsftpd, mediante "sudo apt install vsftpd". Luego, verificamos su funcionamiento y estado. Posteriormente, modificamos el archivo de configuración vsftpd.conf con "sudo nano", configurándolo para no permitir conexiones anónimas, funcionar localmente y estableciendo una umask predeterminada de 022. Personalizamos el banner del login. Configuramos el directorio del chroot_list según la captura de pantalla. Volvemos a verificar el estado del servicio. Finalmente, confirmamos la funcionalidad del servicio FTP usando FileZilla.</p>
             <h4>Proxy en Ubuntu</h4> 
-              <p></p>
+              <p>Primero, instalamos el servicio de Squid con "sudo apt install squid". Luego, configuramos el único archivo necesario para este servicio. Creamos dos ACLs que contienen palabras y dominios denegados. Estos archivos contienen las palabras denegadas en el dominio y los dominios denegados respectivamente. Después, verificamos el servicio desde un cliente, donde se muestra que el Proxy deniega la conexión a la página web buscada.</p>
             <h4>Servicio de correo electrónico en Ubuntu</h4>
-              <p></p> 
-        <h3></h3> 
+              <p>Configuramos postfix añadiendo usuarios simulados. En sysctl.conf, activamos "ipv4 forward=1”. En la configuración de postfix, establecemos hostname como mail.escuelalabdoo.com, mydestination como nuestro dominio y servidor, y el directorio de almacenamiento de correos. Desactivamos SSL y claves SSL, instalamos mailutils, configuramos directorio a la carpeta anterior y desactivamos autenticación. Instalamos Thunderbird para probar el inicio de sesión y el envío/recepción de correos entre usuarios creados.</p> 
+        <div style="margin-top: 80px;"></div>
 </div>
 
 
