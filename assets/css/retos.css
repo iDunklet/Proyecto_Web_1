@@ -37,37 +37,37 @@
     background-color: #292627;
 }
 .article_1 h1{
-    font-size: 55px;
+    font-size: 50px;
     margin-bottom: 20px;
     margin-left: 10px;
 }
 .article_1 h2{
-    font-size: 55px;
+    font-size: 48px;
     margin-top: 15px;
     margin-left: 10px;
     
 }
 .article_1 h3{
     margin: 30px;
-    font-size: 50px;
+    font-size: 45px;
     margin-left: 15px;
     border-bottom: solid black 2px;
 }
 .article_1 h5{
-    margin: 30px;
-    font-size: 35px;
+    margin: 20px;
+    font-size: 30px;
     margin-left: 35px;
     font-weight: 100;
 }
 .article_1 h4{
-    margin: 30px;
+    margin: 25px;
     margin-left: 25px;
     font-size: 40px;
     border-bottom: solid grey 2px;
 }
 .article_1 h6{
     margin: 10px 2px;
-    font-size: 30px;
+    font-size: 20px;
     margin-left: 45px;
 }
 .article_1 p{
@@ -84,6 +84,7 @@
     transition: all ease 300ms;
     border-radius: 15px;
     margin-bottom: 230px;
+    text-align: center;
 }
 .boton_reto a{
     color: #292627;
@@ -158,4 +159,13 @@
 #cisco img{
     border-radius: 30px;
 
+}
+#reto10{
+    position: absolute;
+    right: 7%;
+    top: 30%;
+    text-align: center;
+}
+#reto10 div{
+    margin: 5rem;
 }
