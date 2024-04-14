@@ -153,19 +153,32 @@
 }
 #cisco{
     position: absolute;
-    right: 9%;
+    right: 5%;
     top: 50%;
 }
 #cisco img{
     border-radius: 30px;
 
 }
-#reto10{
+.reto10{
     position: absolute;
     right: 7%;
     top: 30%;
     text-align: center;
 }
-#reto10 div{
+.reto10 div{
     margin: 5rem;
+}
+.reto8{
+    position: absolute;
+    right: 7%;
+    top: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+.reto8 img{
+    height: 400px;
+    width: 400px;
+    margin: 20px;
 }

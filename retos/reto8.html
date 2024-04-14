@@ -15,10 +15,7 @@
             <div class="menu">
                 <nav>
                   <div id="formulario_link"><a href="/index.html#salto_form">Formulario</a></div>
-                  
-                  
                     <ul>
-                      
                         <li class="presupuesto"><a href="">Presupuestos</a>
                             <ul>
                                 <li><a href="../presupuestos/aula21.html">Aula 2.1</a></li>
@@ -67,16 +64,34 @@
         </div>
     </header>
 
- <div class="article_1">
-    <h1></h1>
-    <h2></h2>
-        <h3></h3>
-            <p></p>
-        <h3></h3>  
-            <p></p> 
-        <h3></h3> 
-
-
+ <div class="article_1" style="margin-bottom: 50px;">
+    <h1>Fase 2 - Reto 8</h1>
+    <h2>PFsense</h2>
+        <h3>Pfsense</h3>
+            <p>Los firewalls regulan el tráfico de entrada y salida en dispositivos, detectando y bloqueando anomalías. PfSense es un programa de código abierto que proporciona un firewall avanzado, permitiendo establecer cortafuegos desde máquinas virtuales. Para Labdoo, PfSense ofrece seguridad y sostenibilidad en el tráfico de red, adaptándose a las necesidades de la escuela.</p>
+        <h3>Reglas Firewall</h3>  
+          <h4>HTTP</h4>  
+            <p>La primera regla de firewall configurada redirige todo el tráfico de http a https, garantizando la seguridad de los alumnos al buscar contenido. Se realizaron ajustes dentro de PfSense para implementar esta configuración y asegurar el flujo de datos según lo mencionado anteriormente.</p>
+          <h4>Protección contra malware</h4>
+            <p>Se instaló pfBlockerNG, un anti-malware, para proteger a los alumnos. Se configuró primero instalando el plugin y luego ajustando la configuración en la red WAN para que funcione para todos los clientes. Se realizaron modificaciones para adaptar la configuración a las necesidades específicas del servicio. Finalmente, se recibió una notificación confirmando la instalación y configuración correcta del servicio.</p>
+          <h4>Control de descargas</h4>    
+            <p>Se implementó un control de descargas ligado al balanceo de cargas para evitar la saturación de la red. Se estableció un límite de descarga de 6 megabytes por segundo por usuario para garantizar un flujo equilibrado de datos y evitar la congestión de la red durante las descargas.</p>    
+          <h4>Política de balanceo de cargas          </h4>
+            <p>
+              Se configuraron límites de descarga dentro del Traffic Shaper para evitar la saturación de la red durante el uso simultáneo de los alumnos. Dentro de los Limiters, se establecieron límites tanto para las subidas como para las descargas de la red, garantizando un flujo equilibrado de datos. Las reglas de firewall fueron configuradas para regular el tráfico de la red y garantizar su funcionamiento adecuado.</p>
+        <h3>Squid</h3>
+          <h4>Regla de control de aplicaciones</h4>
+              <p>Para que los alumnos no puedan acceder a distintas aplicaciones en horas escolares, hemos hecho que estas no estén permitidas con distintas acls para denegar el acceso a estas.
+                Aquí podemos observar los distintos dominios que tenemos denegados para la finalidad de que estos no se puedan buscar para los alumnos y profesores en general, son páginas que para nuestro criterio no son útiles y no se tienen que permitir en el entorno escolar y por eso las tenemos puestas como que no se pueden acceder a ellas.
+                </p>
+          <h4>Límites de bandwidth</h4>
+                <p>Se estableció un límite de ancho de banda para controlar el tráfico de la red y evitar la saturación, asegurando un funcionamiento óptimo. Este límite garantiza que cada usuario utilice una cantidad específica de megabytes en un momento dado, evitando así la congestión de la red y asegurando su correcto funcionamiento.</p>
+ </div>
+<div class="reto8">
+  <img src="../assets/img/PFSENSE.png" alt="">
+  <img src="../assets/img/escudo.png" alt="">
+  <img src="../assets/img/notificacion.png" alt="">
+</div>
 
 
         <footer class="pie">
@@ -94,21 +109,13 @@
                   ><svg height="1em" viewBox="0 0 320 512">
                     <path
                       d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"
-                    ></path></svg
-                ></a>
-              
-                
-              
+                    ></path></svg></a>
                 <a href="#" class="social instagram"
                   ><svg height="1em" viewBox="0 0 448 512">
                     <path
                       d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
-                    ></path></svg
-                ></a>
-              </div>
-                 
-                
-                
+                    ></path></svg></a>
+              </div>  
             </div>
             <div class="grupo-2">
                 <small>&copy; 2024 <b>Labdoo</b> - Todos los Derechos Reservados.</small>
