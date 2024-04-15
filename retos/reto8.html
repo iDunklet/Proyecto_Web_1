@@ -65,32 +65,31 @@
     </header>
 
  <div class="article_1" style="margin-bottom: 50px;">
-    <h1>Fase 2 - Reto 8</h1>
-    <h2>PFsense</h2>
-        <h3>Pfsense</h3>
-            <p>Los firewalls regulan el tráfico de entrada y salida en dispositivos, detectando y bloqueando anomalías. PfSense es un programa de código abierto que proporciona un firewall avanzado, permitiendo establecer cortafuegos desde máquinas virtuales. Para Labdoo, PfSense ofrece seguridad y sostenibilidad en el tráfico de red, adaptándose a las necesidades de la escuela.</p>
-        <h3>Reglas Firewall</h3>  
-          <h4>HTTP</h4>  
-            <p>La primera regla de firewall configurada redirige todo el tráfico de http a https, garantizando la seguridad de los alumnos al buscar contenido. Se realizaron ajustes dentro de PfSense para implementar esta configuración y asegurar el flujo de datos según lo mencionado anteriormente.</p>
-          <h4>Protección contra malware</h4>
-            <p>Se instaló pfBlockerNG, un anti-malware, para proteger a los alumnos. Se configuró primero instalando el plugin y luego ajustando la configuración en la red WAN para que funcione para todos los clientes. Se realizaron modificaciones para adaptar la configuración a las necesidades específicas del servicio. Finalmente, se recibió una notificación confirmando la instalación y configuración correcta del servicio.</p>
-          <h4>Control de descargas</h4>    
-            <p>Se implementó un control de descargas ligado al balanceo de cargas para evitar la saturación de la red. Se estableció un límite de descarga de 6 megabytes por segundo por usuario para garantizar un flujo equilibrado de datos y evitar la congestión de la red durante las descargas.</p>    
-          <h4>Política de balanceo de cargas          </h4>
-            <p>
-              Se configuraron límites de descarga dentro del Traffic Shaper para evitar la saturación de la red durante el uso simultáneo de los alumnos. Dentro de los Limiters, se establecieron límites tanto para las subidas como para las descargas de la red, garantizando un flujo equilibrado de datos. Las reglas de firewall fueron configuradas para regular el tráfico de la red y garantizar su funcionamiento adecuado.</p>
-        <h3>Squid</h3>
-          <h4>Regla de control de aplicaciones</h4>
-              <p>Para que los alumnos no puedan acceder a distintas aplicaciones en horas escolares, hemos hecho que estas no estén permitidas con distintas acls para denegar el acceso a estas.
-                Aquí podemos observar los distintos dominios que tenemos denegados para la finalidad de que estos no se puedan buscar para los alumnos y profesores en general, son páginas que para nuestro criterio no son útiles y no se tienen que permitir en el entorno escolar y por eso las tenemos puestas como que no se pueden acceder a ellas.
-                </p>
-          <h4>Límites de bandwidth</h4>
-                <p>Se estableció un límite de ancho de banda para controlar el tráfico de la red y evitar la saturación, asegurando un funcionamiento óptimo. Este límite garantiza que cada usuario utilice una cantidad específica de megabytes en un momento dado, evitando así la congestión de la red y asegurando su correcto funcionamiento.</p>
- </div>
+  <h1>Pfsense</h1>
+  <h2>Fase 2 - Reto 8</h2>
+      <h3>PfSense</h3>
+          <p>Los firewalls regulan el tráfico de entrada y salida en dispositivos, detectando y bloqueando anomalías. PfSense es un programa de código abierto que proporciona un firewall avanzado, permitiendo establecer cortafuegos desde máquinas virtuales. Para Labdoo, PfSense ofrece seguridad y sostenibilidad en el tráfico de red, adaptándose a las necesidades de la escuela.</p>
+      <h3>Reglas de Firewall</h3>  
+        
+        <h4>Protección contra malware</h4>
+          <p>Se instaló pfBlockerNG, un anti-malware, para proteger a los alumnos. Se configuró primero instalando el plugin y luego ajustando la configuración en la red WAN para que funcione para todos los clientes. Se realizaron modificaciones para adaptar la configuración a las necesidades específicas del servicio. Finalmente, se recibió una notificación confirmando la instalación y configuración correcta del servicio.</p>
+        <h4>Control de descargas</h4>    
+          <p>Se implementó un control de descargas ligado al balanceo de cargas para evitar la saturación de la red. Se estableció un límite de descarga de 6 megabytes por segundo por usuario para garantizar un flujo equilibrado de datos y evitar la congestión de la red durante las descargas.</p>    
+        <h4>Política de balanceo de cargas</h4>
+          <p>Se configuraron límites de descarga dentro del Traffic Shaper para evitar la saturación de la red durante el uso simultáneo de los alumnos. Dentro de los Limiters, se establecieron límites tanto para las subidas como para las descargas de la red, garantizando un flujo equilibrado de datos. Las reglas de firewall fueron configuradas para regular el tráfico de la red y garantizar su funcionamiento adecuado.</p>
+      <h3>Squid</h3>
+        <h4>Regla de control de aplicaciones</h4>
+            <p>Para que los alumnos no puedan acceder a distintas aplicaciones en horas escolares, hemos hecho que estas no estén permitidas con distintas ACLs para denegar el acceso a estas.
+              Aquí podemos observar los distintos dominios que tenemos denegados con el fin de que estos no se puedan buscar para los alumnos y profesores en general. Son páginas que, según nuestro criterio, no son útiles y no deben permitirse en el entorno escolar, por lo que las tenemos configuradas para que no se pueda acceder a ellas.
+              </p>
+        <h4>Límites de ancho de banda</h4>
+              <p>Se estableció un límite de ancho de banda para controlar el tráfico de la red y evitar la saturación, asegurando un funcionamiento óptimo. Este límite garantiza que cada usuario utilice una cantidad específica de megabytes en un momento dado, evitando así la congestión de la red y asegurando su correcto funcionamiento.</p>
+</div>
+
 <div class="reto8">
   <img src="../assets/img/PFSENSE.png" alt="">
   <img src="../assets/img/escudo.png" alt="">
-  <img src="../assets/img/notificacion.png" alt="">
+  
 </div>
 
 

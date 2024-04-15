@@ -171,14 +171,27 @@
 }
 .reto8{
     position: absolute;
-    right: 7%;
+    right: 8%;
     top: 30%;
     text-align: center;
     display: flex;
     flex-direction: column;
 }
 .reto8 img{
-    height: 400px;
-    width: 400px;
-    margin: 20px;
+    height: 550px;
+    width: 550px;
+    margin: 80px;
+}
+#pantalla{
+    position: absolute;
+    right: 5%;
+    top: 30%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+#pantalla img{
+    border-radius: 40px;
+    height: 500px;
+    width: 800px;
 }

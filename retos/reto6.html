@@ -14,7 +14,7 @@
         <div class="container__menu">
             <div class="menu">
                 <nav>
-                  
+                    <div id="formulario_link"><a href="/index.html#salto_form">Formulario</a></div>
                    
                     <ul>
                       
@@ -67,42 +67,42 @@
     </header>
 
  <div class="article_1">
-    <h1>Mantenimento de nuestro servidor</h1>
+    <h1>Mantenimiento de nuestro servidor</h1>
     <h2>Reto 6 - Fase 2</h2>
-        <h3>Justificación Sistemas Operativos</h3>
+        <h3>Justificación de Sistemas Operativos</h3>
             <h4>Comparativa</h4>
                 <p>Nos ofrecen la posibilidad de elegir los servidores que deseamos para nuestro proyecto, y después de investigar otras opciones, hemos decidido trabajar con Windows Server 2019 y Ubuntu Server 22.04 LTS. Debemos seleccionar uno como nuestro servidor principal y otro como servidor de respaldo.
-                    Windows Server 2019 es una elección versátil con una interfaz gráfica intuitiva, pero su desventaja es el costo elevado debido a licencias y su naturaleza de red privada.
-                    Ubuntu Server 22.04 LTS destaca por su alta seguridad, código abierto (sin necesidad de licencia), rendimiento superior al servidor Windows, y avanzadas opciones de personalización.</p>
+                    Windows Server 2019 es una elección versátil con una interfaz gráfica intuitiva, pero su desventaja es el costo elevado debido a las licencias y su naturaleza de red privada.
+                    Ubuntu Server 22.04 LTS destaca por su alta seguridad, código abierto (sin necesidad de licencia), rendimiento superior al del servidor Windows, y avanzadas opciones de personalización.</p>
             <h4>Servidores y sus requisitos mínimos</h4>
                 <h5>Windows Server 2019</h5>
-                    <p>Para esta fase del proyecto hemos decidido que Windows Server se quedará como servidor de backup, no tiene tanto rendimiento como Ubuntu Server, y encima al iniciar el dual-boot no carga el servidor primero por defecto.
+                    <p>Para esta fase del proyecto hemos decidido que Windows Server se quedará como servidor de respaldo, no tiene tanto rendimiento como Ubuntu Server, y encima al iniciar el dual-boot no carga el servidor primero por defecto.
                     </p>
                 <h5>Ubuntu Server 22.04 LTS</h5>
                     <p>Ubuntu server se quedará como nuestro servidor principal, como ya hemos dicho anteriormente, tiene mucho más rendimiento, personalización y además el dual-boot lo carga por defecto, haciendo que la accesibilidad al servidor sea mucho más fluida.
                     </p>
         <h3>Montaje del servidor</h3>
             <h4>Nuestro Servidor</h4>
-                    <p>Nuestra torre del servidor consta de los componentes básicos para su correcto funcionamiento, pero vamos a usar una gráfica integrada de nuestro procesador. También hemos sacado el lector de CDs y disquetes porque no vamos a usarlos ni en la instalación ni post instalación, además de que interfería con el montaje y limpieza de la torre. Solo usamos una torre porque vamos a instalar ambos servidores con un dual-boot, es decir, que no vamos a necesitar 2 torres para almacenar ambos Sistemas Operativos.
+                    <p>Nuestra torre del servidor consta de los componentes básicos para su correcto funcionamiento, pero vamos a usar una gráfica integrada de nuestro procesador. También hemos sacado el lector de CDs y disquetes porque no vamos a usarlos ni en la instalación ni post-instalación, además de que interfería con el montaje y limpieza de la torre. Solo usamos una torre porque vamos a instalar ambos servidores con un dual-boot, es decir, que no vamos a necesitar 2 torres para almacenar ambos Sistemas Operativos.
                     </p>
                 <h5>Componentes</h5>
-                    <p>Procesador: I5-7400</p>
+                    <p>Procesador: Intel Core i5-7400</p>
                     <p>Placa Base: Gigabyte GA-H110M-S2H</p>
-                    <p>RAM: 8gb ddr4</p>
-                    <p>Crucial SSD 275 gb</p>
+                    <p>RAM: 8 GB DDR4</p>
+                    <p>Crucial SSD de 275 GB</p>
                     <p>WESTERN DIGITAL 1.0 TB</p>
             <h4>Configuración del servidor</h4>
-                <h5>Justificación de implementación del dual-boot</h5>
-                    <p>El dual-boot consiste básicamente en tener dos sistemas operativos en el ordenador, en nuestro caso de un lado tendremos Windows Server 2019 y por el otro Ubuntu Server 22.04. Las versiones escogidas para los sistemas operativos fueron escogidas basándonos en la experiencia de los participantes del grupo con las mismas.
+                <h5>Justificación de la implementación del dual-boot</h5>
+                    <p>El dual-boot consiste básicamente en tener dos sistemas operativos en el ordenador, en nuestro caso de un lado tendremos Windows Server 2019 y por el otro Ubuntu Server 22.04. Las versiones escogidas para los sistemas operativos fueron elegidas basándonos en la experiencia de los participantes del grupo con las mismas.
                         Hemos optado por implementar un dual-boot porque con él podemos tener más compatibilidad de software, seguridad, estabilidad, etc.</p>
                 <h5>Actualización de nuestros servidores</h5>
                     <h6>Windows</h6>
                         <p>Para actualizar nuestro servidor Windows, tenemos que acceder a la pestaña de “buscar actualizaciones” en nuestro panel de control.
 
-                            Esta por defecto nos busca actualizaciones pendientes que no hemos instalado en nuestro server, pero también puedes hacer una búsqueda a fondo de actualizaciones. Una vez encontradas las actualizaciones tendremos que descargarlas e instalarlas, hay dos botones para eso debajo de cada uno de los apartados de updates.
+                            Por defecto nos busca actualizaciones pendientes que no hemos instalado en nuestro servidor, pero también puedes hacer una búsqueda a fondo de actualizaciones. Una vez encontradas las actualizaciones, tendremos que descargarlas e instalarlas; hay dos botones para eso debajo de cada uno de los apartados de actualizaciones.
                             </p>
                     <h6>Ubuntu</h6>
-                    <p>En Ubuntu tenemos que ejecutar dos comandos, uno para descargar las actualizaciones y otro para instalarlas. En el server tenemos que poner “sudo apt update” para obtener todas las actualizaciones pendientes, y una vez hecho eso tenemos que poner “sudo apt upgrade” para instalarlas, este último comando tarda bastante más que el primero.</p>
+                    <p>En Ubuntu tenemos que ejecutar dos comandos, uno para descargar las actualizaciones y otro para instalarlas. En el servidor tenemos que poner “sudo apt update” para obtener todas las actualizaciones pendientes, y una vez hecho eso, tenemos que poner “sudo apt upgrade” para instalarlas; este último comando tarda bastante más que el primero.</p>
     </div>
     
 <div id="pc">
@@ -112,8 +112,9 @@
     <img src="../assets/img/placa.png" alt="">
 </div>
 <div class="boton_reto">
-    <a href="../assets/documents/reto6.pdf" target="_blank">MAS INFORMACION DEL RETO 6</a>
+    <a href="../assets/documents/reto6.pdf" target="_blank">MÁS INFORMACIÓN DEL RETO 6</a>
 </div>
+
 <footer class="pie">
     <div class="grupo-1">
       <div class="socials-container">
