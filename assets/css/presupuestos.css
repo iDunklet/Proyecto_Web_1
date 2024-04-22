@@ -14,9 +14,10 @@
 .presupuesto_css table{
     border: 2px solid #292627;
     margin: 20px;
-    margin-left: 60px;
+    margin-left: 90px;
     padding: 10px;
     border-radius: 10px;
+    
 }
 .lineas:hover{
     background-color: rgb(228, 228, 228);
@@ -52,20 +53,24 @@
 }
 .introduccion{
     padding: 20px;
+    padding-left: 400px;
 }
 .introduccion h2{
-    padding-left: 5px;
+    padding-left: 45px;
     font-size: 60px;
 }
 .introduccion h1{
     font-size: 70px;
+    
 }
 th{
     font-size: 30px;
+    
 }
 td{
     font-size: 30px;
 }
 span{
     font-size: 25px;
+    padding-left: 45px;
 }
