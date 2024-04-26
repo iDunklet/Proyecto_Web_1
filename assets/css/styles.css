@@ -577,28 +577,13 @@ nav ul li ul li a:hover {
   }
 }
 /*---------------------------------------------------------------------------*/
-@keyframes show {
-  from {
-    transform: translateX(-50%);
-    opacity: 0;
-  }
 
-  to {
-    transform: translateX(0%);
-    opacity: 1;
-  }
-}
-img {
-  view-timeline-name: --image;
-  view-timeline-axis: block;
-
-  animation-timeline: --image;
-  animation-name: show;
-
-  animation-range: entry 25% cover 30%;
-  animation-fill-mode: both;
-}
 /*resumenes*/
+#hugoylluis{
+  height: 400px;
+  width: auto;
+  padding: 30px 200px;
+}
 #container_resumenes{
   width: 100%;
   height: auto  ;
